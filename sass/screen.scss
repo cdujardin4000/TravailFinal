@@ -13,7 +13,6 @@
 @import "layout/layout";
 
 // 4. Charger les modules
-
 @import "modules/section-home";
 @import "modules/section-banner";
 @import "modules/section-contact";
@@ -22,9 +21,6 @@
 @import "modules/section-who-are-we";
 @import "modules/section-our-team";
 
-
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Lato);
+// 5. Charger la police
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 

@@ -2,7 +2,7 @@
 $colors: (
     Btn1     : #8490ff,
     Btn2     : #62bdfc,
-    Couleur3 : #fff,
+    color3   : #fff,
     txt      : #777777,
     title    : #222222,
     link     : #8490ff,
@@ -10,9 +10,16 @@ $colors: (
     bannerBg2: #62bdfc
 );
 
-$fonts: (
-    main:       'Arial',
+/*reference: https://getbootstrap.com/docs/4.0/layout/grid/ , les breakpoints seront certainement à adapter dans le futur*/
+$breakpoints: (
+    breakSmal:   540px,
+    breakMedium: 720px,
+    breakLarge:  960px
 
 );
 
-/*Largeur maximum: 1140px â€¢ Police: Poppins, sans-serif  */
+$fontPrimary:   'Poppins', sans-serif;   
+$fontSecondary: 'Arial', sans-serif;
+
+$maxWidth : 1140px;
+
