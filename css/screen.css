@@ -56,20 +56,19 @@ body {
 
 /* line 13, ../sass/base/_base.scss */
 main {
-  top: 5rem;
-  position: absolute; }
+  margin-top: 5rem; }
 
-/* line 18, ../sass/base/_base.scss */
+/* line 17, ../sass/base/_base.scss */
 h1 {
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: bold; }
 
-/* line 39, ../sass/base/_base.scss */
+/* line 38, ../sass/base/_base.scss */
 p {
   color: #777777; }
 
-/* line 44, ../sass/base/_base.scss */
+/* line 45, ../sass/base/_base.scss */
 strong {
   color: #e21818; }
 
@@ -89,20 +88,21 @@ MENU
 */
 /* line 15, ../sass/layout/_layout.scss */
 #menuPrincipale {
-  position: fixed; }
+  position: fixed;
+  top: 0; }
 
-/* line 19, ../sass/layout/_layout.scss */
+/* line 20, ../sass/layout/_layout.scss */
 .l-main-menu.open {
   transform: translateX(0%);
   transition: transform 0.5s; }
 
-/* line 25, ../sass/layout/_layout.scss */
+/* line 26, ../sass/layout/_layout.scss */
 .l-main-menu-content {
   width: 70vw;
   height: 100vh;
   background-color: black; }
 
-/* line 30, ../sass/layout/_layout.scss */
+/* line 31, ../sass/layout/_layout.scss */
 .l-main-menu {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
@@ -113,16 +113,16 @@ MENU
   z-index: 500;
   transform: translateX(-100%);
   transition: transform 0.5s; }
-/* line 44, ../sass/layout/_layout.scss */
+/* line 45, ../sass/layout/_layout.scss */
 .l-main-menu ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
   margin: 2rem 0 0 2rem; }
-/* line 51, ../sass/layout/_layout.scss */
+/* line 52, ../sass/layout/_layout.scss */
 .l-main-menu li {
   padding: 6px 0; }
-/* line 55, ../sass/layout/_layout.scss */
+/* line 56, ../sass/layout/_layout.scss */
 .l-main-menu a {
   position: relative;
   list-style: none;
@@ -133,7 +133,7 @@ MENU
   padding: .5rem 0;
   color: #fff;
   transition: 0.5s; }
-/* line 66, ../sass/layout/_layout.scss */
+/* line 67, ../sass/layout/_layout.scss */
 .l-main-menu a::after {
   position: absolute;
   content: "";
@@ -145,10 +145,10 @@ MENU
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s; }
-/* line 79, ../sass/layout/_layout.scss */
+/* line 80, ../sass/layout/_layout.scss */
 .l-main-menu a:hover {
   color: #8490ff; }
-/* line 83, ../sass/layout/_layout.scss */
+/* line 84, ../sass/layout/_layout.scss */
 .l-main-menu a:hover::after {
   transform: scaleX(1);
   transform-origin: left; }
@@ -156,7 +156,7 @@ MENU
 /*
 HAMBURGER
 */
-/* line 103, ../sass/layout/_layout.scss */
+/* line 104, ../sass/layout/_layout.scss */
 .nav-hamburger {
   --color: black;
   width: 36px;
@@ -171,7 +171,7 @@ HAMBURGER
   cursor: pointer;
   -webkit-appearence: none;
   -webkit-tap-highlight-color: transparent; }
-/* line 118, ../sass/layout/_layout.scss */
+/* line 119, ../sass/layout/_layout.scss */
 .nav-hamburger svg {
   width: 64px;
   height: 48px;
@@ -184,42 +184,42 @@ HAMBURGER
   fill: none;
   display: block;
   position: absolute; }
-/* line 130, ../sass/layout/_layout.scss */
+/* line 131, ../sass/layout/_layout.scss */
 .nav-hamburger svg path {
   transition: stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s);
   stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px);
   stroke-dashoffset: var(--offset, 126px);
   transform: translateZ(0); }
-/* line 135, ../sass/layout/_layout.scss */
+/* line 136, ../sass/layout/_layout.scss */
 .nav-hamburger svg path:nth-child(2) {
   --duration: .7s;
   --easing: ease-in;
   --offset: 100px;
   --array-2: 74px; }
-/* line 141, ../sass/layout/_layout.scss */
+/* line 142, ../sass/layout/_layout.scss */
 .nav-hamburger svg path:nth-child(3) {
   --offset: 133px;
   --array-2: 107px; }
-/* line 149, ../sass/layout/_layout.scss */
+/* line 150, ../sass/layout/_layout.scss */
 .nav-hamburger.active svg path {
   --offset: 57px; }
-/* line 151, ../sass/layout/_layout.scss */
+/* line 152, ../sass/layout/_layout.scss */
 .nav-hamburger.active svg path:nth-child(1), .nav-hamburger.active svg path:nth-child(3) {
   --delay: .15s;
   --easing: cubic-bezier(0.2, 0.4, 0.2, 1.1); }
-/* line 156, ../sass/layout/_layout.scss */
+/* line 157, ../sass/layout/_layout.scss */
 .nav-hamburger.active svg path:nth-child(2) {
   --duration: .4s;
   --offset: 2px;
   --array-1: 1px; }
-/* line 161, ../sass/layout/_layout.scss */
+/* line 162, ../sass/layout/_layout.scss */
 .nav-hamburger.active svg path:nth-child(3) {
   --offset: 58px; }
 
 /*
 LAYOUT
 */
-/* line 176, ../sass/layout/_layout.scss */
+/* line 177, ../sass/layout/_layout.scss */
 .wrap {
   max-width: 1400px;
   margin: 0 auto; }
