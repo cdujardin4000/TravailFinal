@@ -10,14 +10,6 @@ $colors: (
     bannerBg2: #62bdfc
 );
 
-/*reference: https://getbootstrap.com/docs/4.0/layout/grid/ , les breakpoints seront certainement à adapter dans le futur*/
-$breakpoints: (
-    breakSmal:   540px,
-    breakMedium: 720px,
-    breakLarge:  960px
-
-);
-
 $fontPrimary:   'Poppins', sans-serif;   
 $fontSecondary: 'Arial', sans-serif;
 

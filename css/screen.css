@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* ordre d'importation des fichiers */
 /*ici creer les variable avec ex: tableau de couleur*/
-/*reference: https://getbootstrap.com/docs/4.0/layout/grid/ , les breakpoints seront certainement ├á adapter dans le futur*/
 /* 
 RESET
 */
@@ -45,6 +44,212 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*reference: https://getbootstrap.com/docs/4.0/layout/grid/ , les breakpoints seront certainement ├á adapter dans le futur*/
+/* line 9, ../sass/tools/_grid.scss */
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+/* line 14, ../sass/tools/_grid.scss */
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%; }
+
+/*on g├®n├¿re les colonnes*/
+/* line 22, ../sass/tools/_grid.scss */
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%; }
+
+/* line 22, ../sass/tools/_grid.scss */
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%; }
+
+/* line 22, ../sass/tools/_grid.scss */
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+/* line 22, ../sass/tools/_grid.scss */
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
+
+/* line 22, ../sass/tools/_grid.scss */
+.col-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%; }
+
+/* line 22, ../sass/tools/_grid.scss */
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+/* line 22, ../sass/tools/_grid.scss */
+.col-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%; }
+
+/* line 22, ../sass/tools/_grid.scss */
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
+
+/* line 22, ../sass/tools/_grid.scss */
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+/* line 22, ../sass/tools/_grid.scss */
+.col-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%; }
+
+/* line 22, ../sass/tools/_grid.scss */
+.col-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%; }
+
+/* line 22, ../sass/tools/_grid.scss */
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+/*on boucle sur le tableau breakpoints en ajoutant le type d'├®cran au col et la taille au @media*/
+@media screen and (min-width: 720px) {
+  /* line 31, ../sass/tools/_grid.scss */
+  .col-md {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%; } }
+@media screen and (min-width: 960px) {
+  /* line 31, ../sass/tools/_grid.scss */
+  .col-lg {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
+
+  /* line 37, ../sass/tools/_grid.scss */
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%; } }
 /*ici touts les balises g├®n├®riques*/
 /* line 2, ../sass/base/_base.scss */
 html {
@@ -221,7 +426,7 @@ LAYOUT
 */
 /* line 177, ../sass/layout/_layout.scss */
 .wrap {
-  max-width: 1400px;
+  max-width: 1140px;
   margin: 0 auto; }
 
 /*

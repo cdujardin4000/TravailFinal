@@ -1,10 +1,11 @@
 /* ordre d'importation des fichiers */
 
-// 0. Variable
+// 0. Variables 
 @import "base/variables";
 
-// 1. Reset
+// 1. Tools
 @import "tools/reset";
+@import "tools/grid";
 
 // 2. Base
 @import "base/base";
