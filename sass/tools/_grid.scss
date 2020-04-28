@@ -17,7 +17,7 @@ $grid-col: 12;
     max-width: 100%;
 }
 
-/*on génère les colonnes*/
+/*on génère les col*/
 @for $i from 1 through $grid-col{
     .col-#{$i}{
         flex: 0 0 (100%/$grid-col)*$i;

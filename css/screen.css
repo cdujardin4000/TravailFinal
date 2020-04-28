@@ -56,7 +56,7 @@ table {
   flex-grow: 1;
   max-width: 100%; }
 
-/*on g├®n├¿re les colonnes*/
+/*on g├®n├¿re les col*/
 /* line 22, ../sass/tools/_grid.scss */
 .col-1 {
   flex: 0 0 8.33333%;
@@ -432,3 +432,9 @@ LAYOUT
 /*
 FOOTER
 */
+/*@import "modules/section-banner";
+@import "modules/section-contact";
+@import "modules/section-works";
+@import "modules/section-our-services";
+@import "modules/section-who-are-we";
+@import "modules/section-our-team";*/
