@@ -1,4 +1,4 @@
-/*ici creer les variable avec ex: tableau de couleur*/
+/*ici creer les variable avec ex: tableau de couleur
 $colors: (
     Btn1     : #8490ff,
     Btn2     : #62bdfc,
@@ -8,6 +8,16 @@ $colors: (
     link     : #8490ff,
     bannerBg1: #8490ff,
     bannerBg2: #62bdfc
+);*/
+$colors: (
+    color1   : #8490ff,
+    color2   : #62bdfc,
+    color3   : #fff,
+    color4   : #05071c,
+    color4-op: hsla(235, 70%, 6%, 0.37),
+    txt      : #777777,
+    title    : #222222
+    
 );
 
 $fontPrimary:   'Poppins', sans-serif;   

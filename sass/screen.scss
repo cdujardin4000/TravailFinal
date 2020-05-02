@@ -15,13 +15,12 @@
 
 // 4. Charger les modules
 @import "pages/home";
-/*@import "modules/section-banner";
-@import "modules/section-contact";
-@import "modules/section-works";
-@import "modules/section-our-services";
-@import "modules/section-who-are-we";
-@import "modules/section-our-team";*/
+@import "pages/about";
+@import "pages/portfolio";
+@import "pages/blog";
+@import "pages/contact";
+@import "pages/article";
 
 // 5. Charger la police
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap');
 

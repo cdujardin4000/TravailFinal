@@ -1,0 +1,93 @@
+.sec-banner{
+    margin-top: 7rem;
+    background: linear-gradient(to right, map-get($colors, color1), map-get($colors, color2));
+    padding: 4rem 0;
+    .banner-title{
+        color: map-get($colors, color3);
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    li{
+        display: inline-block;
+        color: map-get($colors, color3);
+        text-transform: capitalize;
+    }
+    nav{
+        text-align: center;
+    }
+}
+
+.pres-3{
+    margin-top: 5rem;
+}
+
+.title-3{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: map-get($colors, title);  /*au cas ou le designer voudrait changer les couleurs*/
+    text-align: left;
+    margin: 2rem 0 1rem 1rem;
+
+}
+.techno{
+    text-align: right;
+    margin-right: 1rem;
+}
+/*PROGRESS BAR*/
+.progress-bar{
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+    background: rgb(202, 195, 195);
+    height: .8rem;
+    border-radius: 10px;
+}
+.pct70, .pct90, .pct80, .pct85, .pct95{
+    background: linear-gradient(to right, map-get($colors, color1), map-get($colors, color2));
+    height: .8rem;
+    border-radius: 10px;
+}
+.pct70{
+    width: 70%;
+}
+.pct90{
+    width: 90%;
+}
+.pct80{
+    width: 80%;
+}
+.pct85{
+    width: 85%;
+}
+.pct95{
+    width: 95%;
+}
+.sec-expertness{
+    p{
+        margin: 1rem;
+    }
+}
+
+
+.testimonial-2{
+    display: none;
+}
+.testimonial-img, .testimonial-info{
+    display: inline-block;
+}
+.testimonial-img{
+    position: relative;
+    width: 15%;
+    margin-left: 3rem;
+    img{
+        position: absolute;
+        width: 2rem;
+        top: 0;
+    }
+}
+
+.testimonial-info{
+    width: 75%
+}

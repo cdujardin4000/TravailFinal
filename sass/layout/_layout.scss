@@ -1,3 +1,19 @@
+.pagination{
+    text-align: center;
+    li{
+        display: inline-block;
+        padding: .5rem;
+        cursor: pointer;
+        &:hover{
+            background-color: blue;
+            color: white;
+        }
+    }
+}
+.wrap{
+    max-width: $maxWidth;
+    margin: 0 auto;
+}
 /*
 HEADER
 */
@@ -8,7 +24,9 @@ HEADER
     left: 1rem;
     top: 1rem;
 }
-
+.logo-header-desktop{
+    display: none;
+}
 /*
 MENU
 */
@@ -26,11 +44,11 @@ MENU
 .l-main-menu-content{
     width: 70vw;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: map-get($colors, color4);
 }
 .l-main-menu{
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: map-get($colors, color4-op);
     width: 100%;
     text-align: left;
     font-size: 1.2rem;
@@ -38,10 +56,6 @@ MENU
     z-index: 500;
     transform: translateX(-100%);
     transition: transform 0.5s;
-    
-    
-
-    
     ul{
         display: flex;
         flex-direction: column;
@@ -77,11 +91,11 @@ MENU
             transition: transform 0.5s;
         }
 
-        &:hover {
-            color:  map-get($colors, link);
+        &:hover{
+            color:  map-get($colors, color1);
         }
 
-        &:hover::after {
+        &:hover::after{
             transform: scaleX(1);
             transform-origin: left;
         }
@@ -91,11 +105,63 @@ MENU
 }
 
 @media only screen and (min-width: map-get($breakpoints , md)){
+    #menuPrincipale{
+        position: relative;
+        right: 2rem;
+    }
+    .l-main-menu, .l-main-menu-content{
+        height: 5rem;
+        background: map-get($colors, color3);
+        width: $maxWidth;
+    }
+    .l-main-menu{
+        max-width: calc(100vw - 4rem);
+        padding: 0 2rem;
+        transform: translateX(0%);
+        
+        a{
+            color: map-get($colors, title);
+            &::after{
+                background: map-get($colors, title);
+            }
+        }
+        ul{
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-left: 0;
+        }
+        li{
+            padding-left: 1rem;
+        }
+    }
+    .l-main-menu-content{
+        
+        position: relative;
+    }
+    .logo-header{
+        display: none;
+    }
+    .logo-header-desktop{
+        padding-left: 1rem;
+        height: 5rem;
+        width: 10rem;
+        position: absolute;
+        top: 2rem;
+        z-index: 999;
+        display: inline-block;
+    }
+    .nav-hamburger{
+        display: none;
+    }
 
 
 }
 @media only screen and (min-width: map-get($breakpoints , lg)){
-
+    .l-main-menu{
+        li{
+            padding-left: 2rem;
+        }
+    }
 }
 /*
 HAMBURGER
@@ -168,24 +234,64 @@ HAMBURGER
 }
 
 /*
-LAYOUT
-*/
-
-
-
-
-.wrap{
-    max-width: $maxWidth;
-    margin: 0 auto;
-}
-
-
-/*
 FOOTER
 */
+footer{
+    padding-bottom: 1rem;
+    background-color: map-get($colors, color4);
+    strong{
+    color: map-get($colors, color1);
+    }
+    p{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    a{
+        color: map-get($colors, color1);
+    }
+}
 
+.footer-title{
+    color: map-get($colors, color3);
+    font-size: 1rem;
+    margin: 2rem 0 0 1rem;
+    text-transform: capitalize;
+}
 
+.p-copyright{
+    
+    margin-top: 1rem;
+}
 
+.mail-picker{
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+    input{
+        width: calc(80% - 1rem);
+        height: 2rem;
+    }
+    button{
+        display: inline-block;
+        background: map-get($colors, color1);
+        color: map-get($colors, color3);
+        width: calc(20% - 1rem);
+        height: 2.2rem;
+        cursor: pointer;
+    }
+}
 
+.social-footer{
+    font-size: 1rem;
+    margin: 1rem;
+    
+}
 
-
+@media only screen and (min-width: map-get($breakpoints , md)){
+    footer{
+        padding: 2rem 0 3rem;
+    }
+    .social-footer{
+        margin: .5rem;
+        
+    }
+}

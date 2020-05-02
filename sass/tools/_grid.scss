@@ -20,8 +20,8 @@ $grid-col: 12;
 /*on génère les col*/
 @for $i from 1 through $grid-col{
     .col-#{$i}{
-        flex: 0 0 (100%/$grid-col)*$i;
-        max-width: (100%/$grid-col)*$i;
+        flex: 0 0 (100% / $grid-col)*$i;
+        max-width: (100% / $grid-col)*$i;
     }
 }
 
@@ -35,8 +35,8 @@ $grid-col: 12;
         }
     @for $i from 1 through $grid-col{
         .col-#{$screen}-#{$i}{
-            flex: 0 0 (100%/$grid-col)*$i;
-            max-width: (100%/$grid-col)*$i;
+            flex: 0 0 (100% / $grid-col)*$i;
+            max-width: (100% / $grid-col)*$i;
             }
         }
     }

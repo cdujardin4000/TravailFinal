@@ -1,0 +1,208 @@
+/*TITLES*/
+.hello, .title-main, .title-1{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: map-get($colors, title);  /*au cas ou le designer voudrait changer les couleurs*/
+}
+
+.hello{
+    margin: 3rem 0 2rem 1rem;
+    font-size: 1.2rem;
+}
+
+.title-main{
+    margin: 0rem 0 1rem 1rem;
+    font-size: 2rem;
+}
+
+.title-1{
+    margin: 0rem 0 1rem 1rem;
+    font-size: 1.4rem;
+}
+
+.title-2{
+    margin: 8rem 0 2rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: map-get($colors, title);  /*au cas ou le designer voudrait changer les couleurs*/
+    text-align: center;
+    padding: 0 3rem;
+}
+
+/*TEXT*/
+.p-style{
+    text-align: center;
+}
+/*BUTTONS*/
+.btn-1{
+    background: linear-gradient(to right, map-get($colors, color1), map-get($colors, color2));
+    color: map-get($colors, color3);
+    text-transform: uppercase;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-left: 1rem;
+    
+}
+
+/*IMAGES*/
+.img-box{
+        padding: 5rem;
+        width: calc(100% - 10rem);
+        margin-bottom: 5rem;
+}
+.service{
+    text-align: center;
+}
+.lnr{
+    font-size: 3rem;
+}
+/*BANIERE*/
+.sec-ban-counter{
+    margin-top: 5rem;
+    padding: 5rem 0;
+    background: linear-gradient(to right, map-get($colors, color1), map-get($colors, color2));
+}
+
+.counter-number, .counter-item{
+    color: map-get($colors, color3);
+    text-align: center;
+}
+
+.counter-number{
+    font-size: 2.5rem;
+}
+.counter-item{
+    font-size: .8rem;
+    margin-top: -2.5rem;
+    font-weight: lighter;
+    
+}
+
+/*GALLERIE*/
+.project{
+    padding: 1rem;
+    .p-style{
+        margin-top: -2rem;
+    }
+}
+
+/*BLOG*/
+.sec-blog{
+    .img-box{
+        padding: 0 1rem;
+        width: calc(100% - 2rem);
+        margin: 2rem 0 1rem;
+    }
+}
+
+.blogger{
+    margin-left: 1rem;
+    display: inline-block;
+    width: calc(50% - 1rem);
+    .name{
+        color: map-get($colors, title);
+        font-size: .8rem;
+    }
+    img{
+        width: 1.5rem;
+        display: inline-block;
+    }
+    p{
+        display: inline-block;
+        margin: 0 0 1rem 1rem;
+
+    }
+}
+
+.info{
+    text-align: right;
+    color: map-get($colors, txt);
+    display: inline-block;
+    width: calc(50% - 1rem);
+    .lnr{
+        font-size: 1rem;
+    }
+}
+
+.counter-article{
+    margin-left: .5rem;
+    display: inline-block;
+}
+
+.title-article{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0 1rem;
+}
+
+/*BANIERE-LABEL*/
+.sec-ban-logo{
+    margin-top: 5rem;
+    padding: 5rem 0;
+    background: linear-gradient(to right, map-get($colors, color1), map-get($colors, color2));
+    img{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+.label{
+    display: none;
+}
+
+@media only screen and (min-width: map-get($breakpoints , md)){
+    /*on rend les elements cachés visibles on passe en flex pour les aligner horizontalement. 
+    on donne une taille de 15% afin de leur laisser de place pour les marges*/
+    .label{
+        display: inline-block;
+    }
+    .sec-ban-logo-content{
+        display: flex;
+        justify-content: space-around;
+        img{
+            width: 15%;
+            margin: 0;
+        }
+    }
+    /*on rajoute de la marge sur tous les elements*/
+    .sec-about, .sec-services, .gallery-portfolio, .sec-expertness{
+        padding: 0 2rem;
+    }
+    /*on diminue le padding qu'on avait mis en smartphone afin d'avoir des images de meme taille. 
+    cela augmente la taille de la photo du dessus*/
+    .img-box{
+        padding: 1rem;
+    }
+    .pres-2{
+        img{
+            margin-top: 3rem;
+        }
+    }
+    .pres-1{
+        .hello{
+            margin-top: 6rem;
+        }
+    }
+    /*adaptation des tailles des elements blogger et info qui n'ont plus assez de place*/
+    .info{
+        font-size: .5rem;
+    }
+    .counter-article{
+        margin-left: .2rem;
+    }
+    .blogger{
+        img{
+            width: 1rem;
+        }
+        .name{
+            font-size: .5rem;
+        }
+    }
+
+}
+
