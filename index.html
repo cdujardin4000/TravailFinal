@@ -13,16 +13,16 @@
         <div class="container">
             <div class="wrap">
                 <nav class="l-main-menu" id="menuPrincipale">
-                    <div class="logo-header-desktop">
-                        <img src="img/logo.png">
-                    </div>
                     <div class="l-main-menu-content">
+                        <div class="logo-header-desktop">
+                            <img src="img/logo.png">
+                        </div>
                         <ul>
-                            <li><a href="" class="link menu-active">home</a></li>
-                            <li><a href="" class="link">about</a></li>
-                            <li><a href="" class="link">portfolio</a></li>
-                            <li><a href="" class="link">blog</a></li>
-                            <li><a href="" class="link">contact</a></li>
+                            <li><a href="index.html" class="link is-active">home</a></li>
+                            <li><a href="about.html" class="link">about</a></li>
+                            <li><a href="portfolio.html" class="link">portfolio</a></li>
+                            <li><a href="blog.html" class="link">blog</a></li>
+                            <li><a href="contact.html" class="link">contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -40,36 +40,35 @@
         </div>
     </header>
     <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-arrow-alt-circle-up"></i></button>
         <section class="sec-about">
             <div class="wrap">
-                <div class="row">
-                    <div class="pres-1">
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-6">
-                                <p class="hello">this is me</p>
-                                <h1 class="title-main">isl student</h1>
-                                <p>You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different 
-                                    futures</p>
-                                <a class="btn-1" href="#">discover now</a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-6">
-                                <img src="img/me-2.png" class="img-box" alt="" title="">
-                            </div>
+                <div class="pres-1">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <p class="hello">this is me</p>
+                            <h1 class="title-main">isl student</h1>
+                            <p class="p-pres">You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different 
+                                futures</p>
+                            <a class="btn-1" href="#">discover now</a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <img src="img/me-2.png" class="img-box" alt="" title="">
                         </div>
                     </div>
-                    <div class="pres-2">
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-6">
-                                <img src="img/me-1.png" alt="" title="">
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-6">
-                                <p class="hello">about me</p>
-                                <h2  class="title-1">personal details</h2>
-                                <p>Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola. Lorem ipsum 
-                                    dolor, sit amet consectetur adipisicing elit. Maiores ipsa iste aliquid fugit nam autem, aut modi veritatis impedit deserunt aliquam 
-                                    cupiditate et, error minus praesentium, blanditiis reprehenderit! Dolor, accusamus!</p>
-                                <a class="btn-1" href="#">view full details</a>
-                            </div>
+                </div>
+                <div class="pres-2">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <img src="img/me-1.png" alt="" title="">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <p class="hello">about me</p>
+                            <h2  class="title-1">personal details</h2>
+                            <p class="p-pres">Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola. Lorem ipsum 
+                                dolor, sit amet consectetur adipisicing elit. Maiores ipsa iste aliquid fugit nam autem, aut modi veritatis impedit deserunt aliquam 
+                                cupiditate et, error minus praesentium, blanditiis reprehenderit! Dolor, accusamus!</p>
+                            <a class="btn-1" href="#">view full details</a>
                         </div>
                     </div>
                 </div>
@@ -317,12 +316,12 @@
                 <div class="col-12 col-md-5 col-lg-5">
                     <h2 class="footer-title">newsletter</h2>
                     <p>Stay updated in our latest trends.</p>
-                    <div class="mail-picker">
+                    <form class="mail-picker">
                         <input placeholder=" Enter your Email" type="text" id="email"  name="email"/>    
-                        <button class="bnt-send" id="send" href="#">
-                            <!--<span class="lnr lnr-arrow-right"></span>-->Envoyer
+                        <button class="bnt-send" type="submit">
+                            <span class="lnr lnr-arrow-right"></span>
                         </button>  
-                    </div>      
+                    </form>      
                 </div>
                 <div class="col-12 col-md-2 col-lg-2">
                     <h2 class="footer-title">follow me</h2>

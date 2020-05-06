@@ -13,16 +13,16 @@
         <div class="container">
             <div class="wrap">
                 <nav class="l-main-menu" id="menuPrincipale">
-                    <div class="logo-header-desktop">
-                        <img src="img/logo.png">
-                    </div>
                     <div class="l-main-menu-content">
+                        <div class="logo-header-desktop">
+                            <img src="img/logo.png">
+                        </div>
                         <ul>
-                            <li><a href="" class="link menu-active">home</a></li>
-                            <li><a href="" class="link">about</a></li>
-                            <li><a href="" class="link">portfolio</a></li>
-                            <li><a href="" class="link">blog</a></li>
-                            <li><a href="" class="link">contact</a></li>
+                            <li><a href="index.html" class="link">home</a></li>
+                            <li><a href="about.html" class="link menu-active">about</a></li>
+                            <li><a href="portfolio.html" class="link">portfolio</a></li>
+                            <li><a href="blog.html" class="link">blog</a></li>
+                            <li><a href="contact.html" class="link">contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -40,6 +40,7 @@
         </div>
     </header>
     <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-arrow-alt-circle-up"></i></button>
         <section class="sec-banner">
             <h1 class="banner-title">about me</h1>
             <nav>
@@ -54,7 +55,7 @@
                 <div class="pres-2">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-6">
-                            <img class="pres-3" src="img/me-1.png" alt="" title="">
+                            <img id="pres-3" src="img/me-1.png" alt="" title="">
                         </div>
                         <div class="col-12 col-md-6 col-lg-6">
                             <p class="hello">about me</p>
@@ -111,27 +112,33 @@
             </div>
         </section>
         <section class="feedback">
-            <h3 class="title-2">client's feedback about me</h3>
-            <p class="p-style">It is verry easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="testimonial-1">
-                        <div class="testimonial-img">
-                            <img src="img/feedbacker-1.png" alt="" title="">
-                        </div>
-                        <div class="testimonial-info">
-                            <p>Do you want to be even more successful? Learn to lonin learning and growth. The more effort you put into improving your skills, the bigger the payoff you.</p>
-                            <p class="commenter">harriet maxwell</p>
-                            <p>CEO at Google</p>
+            <div class="wrap">
+                <h3 class="title-2">client's feedback about me</h3>
+                <p class="p-style">It is verry easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="testimonial-1">
+                            <div class="testimonial-img">
+                                <img src="img/feedbacker-1.png" alt="" title="">
+                            </div>
+                            <div class="testimonial-info">
+                                <p>Do you want to be even more successful? Learn to lonin learning and growth. The more effort you put into improving your skills, the bigger the payoff you.</p>
+                                <p class="commenter">harriet maxwell</p>
+                                <p>CEO at Google</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="testimonial-2">
-                        <img src="img/blogger-mark-wiens.png" alt="" title="">
-                        <p>A purpose is the element condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.</p>
-                        <p class="commenter">carolyn craig</p>
-                        <p>CEO at Facebook</p>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="testimonial-2">
+                            <div class="testimonial-img">
+                                <img src="img/blogger-mark-wiens.png" alt="" title="">
+                            </div>
+                            <div class="testimonial-info">
+                                <p>A purpose is the element condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.</p>
+                                <p class="commenter">carolyn craig</p>
+                                <p>CEO at Facebook</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,12 +168,12 @@
                 <div class="col-12 col-md-5 col-lg-5">
                     <h2 class="footer-title">newsletter</h2>
                     <p>Stay updated in our latest trends.</p>
-                    <div class="mail-picker">
+                    <form class="mail-picker">
                         <input placeholder=" Enter your Email" type="text" id="email"  name="email"/>    
-                        <button class="bnt-send" id="send" href="#">
-                            <!--<span class="lnr lnr-arrow-right"></span>-->Envoyer
+                        <button class="bnt-send" type="submit">
+                            <span class="lnr lnr-arrow-right"></span>
                         </button>  
-                    </div>      
+                    </form>     
                 </div>
                 <div class="col-12 col-md-2 col-lg-2">
                     <h2 class="footer-title">follow me</h2>

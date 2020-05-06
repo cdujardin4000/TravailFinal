@@ -10,29 +10,37 @@
 </head>
 <body>
     <header>
-        <nav class="l-main-menu" id="menuPrincipale">
-            <div class="l-main-menu-content">
-                <ul>
-                    <li><a href="" class="link">home</a></li>
-                    <li><a href="" class="link">about</a></li>
-                    <li><a href="" class="link">portfolio</a></li>
-                    <li><a href="" class="link">blog</a></li>
-                    <li><a href="" class="link">contact</a></li>
-                </ul>
+        <div class="container">
+            <div class="wrap">
+                <nav class="l-main-menu" id="menuPrincipale">
+                    <div class="l-main-menu-content">
+                        <div class="logo-header-desktop">
+                            <img src="img/logo.png">
+                        </div>
+                        <ul>
+                            <li><a href="index.html" class="link">home</a></li>
+                            <li><a href="about.html" class="link">about</a></li>
+                            <li><a href="portfolio.html" class="link">portfolio</a></li>
+                            <li><a href="blog.html" class="link">blog</a></li>
+                            <li><a href="contact.html" class="link">contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <button class="nav-hamburger" id="hamburger">
+                    <svg viewBox="0 0 64 48">
+                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                    </svg>
+                </button>
+                <div class="logo-header">
+                    <img src="img/logo.png">
+                </div>
             </div>
-        </nav>
-        <button class="nav-hamburger" id="hamburger">
-            <svg viewBox="0 0 64 48">
-                <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
-                <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
-                <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
-            </svg>
-        </button>
-        <div class="logo-header">
-            <img src="img/logo.png">
         </div>
     </header>
     <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-arrow-alt-circle-up"></i></button>
         <section class="sec-banner-article">
             <h1 class="banner-title">blog details page</h1>
             <p class="banner-about-txt">home<span class="arrow"></span>blog<span class="arrow">blog details page</span></p>
@@ -261,8 +269,12 @@
             <div class="col-12 col-md-5 col-lg-5">
                 <h2 class="footer-title">newsletter</h2>
                 <p>Stay updated in our latest trends.</p>      
-                <input placeholder="     Email" type="text" id="email"  name="email"/>    
-                <a class="bnt-send" id="send" href="#">Envoyer</a>           
+                <form class="mail-picker">
+                    <input placeholder=" Enter your Email" type="text" id="email"  name="email"/>    
+                    <button class="bnt-send" type="submit">
+                        <span class="lnr lnr-arrow-right"></span>
+                    </button>  
+                </form>        
             </div>
             <div class="col-12 col-md-5 col-lg-2">
                 <h2 class="footer-title">follow me</h2>

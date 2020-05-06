@@ -1,5 +1,5 @@
 .sec-banner{
-    margin-top: 7rem;
+    margin-top: 4rem;
     background: linear-gradient(to right, map-get($colors, color1), map-get($colors, color2));
     padding: 4rem 0;
     .banner-title{
@@ -18,8 +18,8 @@
     }
 }
 
-.pres-3{
-    margin-top: 5rem;
+#pres-3{
+    margin-top: 8rem;
 }
 
 .title-3{
@@ -70,24 +70,51 @@
     }
 }
 
-
+.testimonial-1, .testimonial-2{
+    display: flex;
+    p{
+        margin-top: 1rem;
+    }
+}
 .testimonial-2{
     display: none;
 }
-.testimonial-img, .testimonial-info{
-    display: inline-block;
+.commenter{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: map-get($colors, title);
 }
 .testimonial-img{
-    position: relative;
     width: 15%;
     margin-left: 3rem;
     img{
-        position: absolute;
-        width: 2rem;
-        top: 0;
+        width: 100%;
+        margin-top: 1rem;
     }
 }
 
 .testimonial-info{
-    width: 75%
+    width: 85%;
+    padding-left: 1rem;
+}
+
+@media only screen and (min-width: map-get($breakpoints , md)){
+    .sec-banner{
+        margin-top: 4rem;
+    }
+    .testimonial-2{
+        display: flex;
+        img{
+            border-radius: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: map-get($breakpoints , lg)){
+    .testimonial-1, .testimonial-2{
+        img{
+            width: 50%;
+        }
+    }
 }

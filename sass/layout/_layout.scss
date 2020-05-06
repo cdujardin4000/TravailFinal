@@ -1,15 +1,4 @@
-.pagination{
-    text-align: center;
-    li{
-        display: inline-block;
-        padding: .5rem;
-        cursor: pointer;
-        &:hover{
-            background-color: blue;
-            color: white;
-        }
-    }
-}
+
 .wrap{
     max-width: $maxWidth;
     margin: 0 auto;
@@ -77,8 +66,10 @@ MENU
         padding: .5rem 0;
         color: map-get($colors, color3);
         transition: 0.5s;
-
-        &::after {
+        .link.is-active{
+            color:  map-get($colors, color1);
+        }
+        &::after{
             position: absolute;
             content: "";
             top: 85%;
@@ -99,26 +90,25 @@ MENU
             transform: scaleX(1);
             transform-origin: left;
         }
-        
+
 
     }
 }
 
 @media only screen and (min-width: map-get($breakpoints , md)){
     #menuPrincipale{
-        position: relative;
-        right: 2rem;
+        left: 0;
+        border-bottom: 1px solid map-get($colors, title);
     }
     .l-main-menu, .l-main-menu-content{
-        height: 5rem;
+        height: 4rem;
         background: map-get($colors, color3);
-        width: $maxWidth;
+        
     }
     .l-main-menu{
-        max-width: calc(100vw - 4rem);
-        padding: 0 2rem;
+        padding: 0;
         transform: translateX(0%);
-        
+        width: 100vw;
         a{
             color: map-get($colors, title);
             &::after{
@@ -128,15 +118,17 @@ MENU
         ul{
             flex-direction: row;
             justify-content: flex-end;
-            margin-left: 0;
+            margin: 1rem 0;
+            padding-right: 2rem;
         }
         li{
             padding-left: 1rem;
         }
     }
     .l-main-menu-content{
-        
+        width: $maxWidth;
         position: relative;
+        margin: 0 auto; 
     }
     .logo-header{
         display: none;
@@ -146,7 +138,7 @@ MENU
         height: 5rem;
         width: 10rem;
         position: absolute;
-        top: 2rem;
+        top: 1rem;
         z-index: 999;
         display: inline-block;
     }
@@ -162,6 +154,32 @@ MENU
             padding-left: 2rem;
         }
     }
+}
+/*
+BACK TO TOP BUTTON
+*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 0;
+    z-index: 99;   
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 100%;
+    i{
+        font-size: 2rem;
+        color: map-get($colors, title);
+        transition: color .3s, opacity .5s, visibility .5s;
+    }
+}
+#myBtn:hover {
+    i{
+        color: map-get($colors, color1);
+    }
+    
 }
 /*
 HAMBURGER
@@ -265,27 +283,37 @@ footer{
 
 .mail-picker{
     width: calc(100% - 2rem);
-    margin: 0 1rem;
+    display: flex;
+    height: 2rem;
+    padding: 0 1rem;
     input{
         width: calc(80% - 1rem);
         height: 2rem;
     }
+    
     button{
         display: inline-block;
         background: map-get($colors, color1);
         color: map-get($colors, color3);
         width: calc(20% - 1rem);
-        height: 2.2rem;
+        height: 2.4rem;
         cursor: pointer;
+        border: none;
+        span{
+            font-size: 1.5rem;
+        }
     }
 }
-
 .social-footer{
     font-size: 1rem;
     margin: 1rem;
     
 }
-
+.fab:hover{
+    transform: perspective(50px) translateZ(10px);
+    color: map-get($colors, color1);
+    transition: transform 0.3s;
+}
 @media only screen and (min-width: map-get($breakpoints , md)){
     footer{
         padding: 2rem 0 3rem;
@@ -293,5 +321,10 @@ footer{
     .social-footer{
         margin: .5rem;
         
+    }
+    #myBtn {
+        i{
+            font-size: 2.7rem;
+        }
     }
 }

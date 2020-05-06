@@ -1,4 +1,153 @@
+/*BANIERE*/
+.sec-ban-blog{
+    padding: 5rem 1rem;
+    min-height: 30rem;
+    background: linear-gradient(0deg, hsla(237, 68%, 6%, 0.589), hsla(237, 68%, 6%, 0.74)), url("../img/blog-home-banner.jpg");
+    background-size: 500%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    margin-top: 4rem;
+}
+.btn-blog{
+    background: map-get($colors, color3);
+    color: map-get($colors, title);
+    text-transform: uppercase;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 6rem auto;
+    text-align: center;
+    width: 6rem;
+    display: block;
+    &:hover{
+        background: map-get($colors, color1);
+        color: map-get($colors, color3);
+    }
+}
+.ban-blog-title{
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: map-get($colors, color3);  
+    text-align: center;
+    margin-top: 5rem;
+}
+.ban-blog-txt{
+    color: map-get($colors, color3);
+    text-align: center;
+}
+/*THUMBS*/
+.sec-thumbs{
+    margin-top: 3rem;
+}
+.thumbs-box{
+    padding: 2rem 1rem;
+}
+.thumbs-opct{
+    background: rgba(0, 0, 0, 0.788);
+    height: 10rem;
+    p{
+        color: map-get($colors, color3);
+        margin: 2rem 0;
+    }
+}
+.thumbs-title{
+    color: map-get($colors, color3);
+    text-transform: uppercase;
+    padding: 2.5rem 0 1rem;
+    margin: 0 2rem;
+    border-bottom: 3px solid map-get($colors, color3);
+    text-align: center;
+    font-size: 1.2rem;
+}
+.thumbs-bg-1, .thumbs-bg-2, .thumbs-bg-3{
+    min-height: 10rem;
+    padding: 1rem;
+}
+.thumbs-bg-1{
+    background: url("../img/thumbs-party.jpg");
+    background-size: cover;/*je me répète mais ne fonctionne pas si je le mets dans le selecteur des 3 thumbs*/
+}
+.thumbs-bg-2{
+    background: url("../img/thumbs-co-worker.jpg");
+    background-size: cover;/*je me répète mais ne fonctionne pas si je le mets dans le selecteur des 3 thumbs*/
+}
+.thumbs-bg-3{
+    background: url("../img/thumbs-meat.jpg");
+    background-size: cover;/*je me répète mais ne fonctionne pas si je le mets dans le selecteur des 3 thumbs*/
+}
+
+/*BLOG*/
+.sec-blog-page{
+    margin: 1rem;
+    .info{
+        margin: 1rem 0;
+        font-size: .8rem;
+        justify-content: start;
+        width: 100%
+    }
+    .lnr{
+        margin-left: .5rem;
+    }
+    img{
+        margin: 2rem 0;
+    }
+    .title-article{
+        text-transform: capitalize;
+        margin-left: 0;
+    }
+    p{
+        margin-left: 0;
+    }
+}
+.tags{
+    text-transform: capitalize;
+    margin: 2rem 0;
+}
+.bnt-article{
+    color: map-get($colors, title);
+    margin-left: 3rem;
+    text-transform: capitalize;
+}
+
+
+
+.pagination{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    .lnr{
+        font-size: 1rem;
+    }
+    li{
+        font-size: 1rem;
+        display: inline-block;
+        padding: .5rem;
+        cursor: pointer;
+        &:hover{
+            background-color: map-get($colors, color1);
+            color: white;
+        }
+    }
+}
+
+
+aside{
+    .blogger{
+        width: calc(100% - 2rem);
+        display: block;
+    }
+}
+
 .category{
     width: 8rem;
     display: inline-block;
+}
+
+@media only screen and (min-width: map-get($breakpoints , md)){
+    .sec-ban-blog{
+        margin-top: 4rem;
+    }
 }
