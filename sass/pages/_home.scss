@@ -175,10 +175,7 @@
     .sec-about{
         margin-top: 8rem;
     }
-    /*on rajoute de la marge sur tous les elements*/
-    .sec-about, .sec-services, .gallery-portfolio, .sec-expertness{
-        padding: 0 2rem;
-    }
+
     /*on rend les elements cachés visibles on passe en flex pour les aligner horizontalement. 
     on donne une taille de 15% afin de leur laisser de place pour les marges*/
     .label{
@@ -202,6 +199,10 @@
         img{
             margin-top: 9rem;
         }
+    }
+    /*on recentre le contenu par rapport au reste*/
+    .presentation{
+        padding-left: 4rem;
     }
     /*adaptation des marges pour placer les éléments au mieux */ 
     .pres-1{

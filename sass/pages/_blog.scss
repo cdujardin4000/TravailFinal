@@ -23,6 +23,7 @@
     &:hover{
         background: map-get($colors, color1);
         color: map-get($colors, color3);
+        box-shadow: 2px 2px 10px 0px map-get($colors, color3);
     }
 }
 .ban-blog-title{
@@ -112,7 +113,7 @@
     text-transform: capitalize;
 }
 
-
+/*PAGINATION*/
 
 .pagination{
     margin-top: 3rem;
@@ -133,19 +134,129 @@
     }
 }
 
-
+/*ASIDE*/
 aside{
     .blogger{
         width: calc(100% - 2rem);
         display: block;
     }
 }
-
-.category{
-    width: 8rem;
-    display: inline-block;
+.search-form{
+    margin: 3rem 0 3rem 2rem;
+    width: calc(100% - 2rem);
+    display: flex;
+    justify-content: center;
 }
+.search-input{
+    height: 3rem;
+    width: calc(100% - 4rem);
+    background-color: map-get($colors, color1);
+    color: map-get($colors, color3);
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    padding-left: 2rem;
+}
+.search-btn{
+    position: relative;
+    background: transparent;
+    border: none;
+    right: 3rem;
+    color: map-get($colors, color3);
+    span{
 
+        font-size: 1.5rem;
+    }
+}
+#blogger-aside{
+    width: 40%;
+    margin: 0 30% 3rem;
+}
+.blogger-name{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2rem;
+    color: map-get($colors, title);
+    font-weight: bold;
+}
+.sec-blogger{
+    padding: 0 2rem;
+}
+.blogger-social{
+    text-align: center;
+    margin: 2rem 0;
+    .fab{
+        color: map-get($colors, title);
+        font-size: 1.2rem;
+        &:hover{
+            color: map-get($colors, color1);
+        }
+    }
+    
+}
+.title-aside{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem 0;
+    background: map-get($colors, color1);
+    color: map-get($colors, color3);
+    margin: 2rem 0;
+}
+.post{
+    display: flex;
+    img{
+        width: 40%;
+        max-height: 5rem;
+    }
+    .title-3{
+        font-size: .8rem;
+        margin-top: 0;
+    }
+}
+.post > div{
+    display: inline-block;
+    width: 60%;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+}
+.post-info{
+    text-align: center;
+    p{
+        margin: .5rem 1rem 2rem ;
+        text-align: left;
+    }
+}
+.category{
+    width: calc(100% - 2rem);
+    display: inline-block
+}
+.tags{
+    a{
+        display: inline-block;
+        padding: 0 .5rem .5rem .5rem;
+        line-height: 2rem;
+        cursor: pointer;
+        &:hover{
+            color: map-get($colors, color3);
+            background: map-get($colors, color1);
+        }
+        &::after{
+            display: inline-block;
+            width: .1rem;
+            height: 2rem;
+            background: map-get($colors, txt);
+            content: "";
+            position: relative;
+            top: .7rem;
+            
+            left: .6rem;
+        }
+    }
+}
 @media only screen and (min-width: map-get($breakpoints , md)){
     .sec-ban-blog{
         margin-top: 4rem;
