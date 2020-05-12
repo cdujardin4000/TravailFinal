@@ -3,32 +3,7 @@
     max-width: $maxWidth;
     margin: 0 auto;
 }
-/*
-BACK TO TOP BUTTON
-*/
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 1rem;
-    right: 0;
-    z-index: 99;   
-    border: none;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 100%;
-    i{
-        font-size: 2rem;
-        color: map-get($colors, title);
-        transition: color .3s, opacity .5s, visibility .5s;
-    }
-}
-#myBtn:hover {
-    i{
-        color: map-get($colors, color1);
-    }
-    
-}
+
 /*
 HEADER
 */
@@ -79,7 +54,7 @@ MENU
         
     }
     li{
-        padding: 6px 0;
+        padding: 1.5rem 0;
     }    
     a{
         position: relative;
@@ -91,6 +66,9 @@ MENU
         padding: .5rem 0;
         color: map-get($colors, color3);
         transition: 0.5s;
+        &.is-active{
+            color:  map-get($colors, color1);
+        }
 
         &::after{
             position: absolute;
@@ -126,7 +104,7 @@ MENU
     }
     #menuPrincipale{
         left: 0;
-        border-bottom: 1px solid map-get($colors, title);
+        border-bottom: 1px solid map-get($colors, txt);
     }
     .l-main-menu, .l-main-menu-content{
         height: 4rem;
@@ -134,6 +112,7 @@ MENU
         
     }
     .l-main-menu{
+        font-size: 1rem;
         padding: 0;
         transform: translateX(0%);
         width: 100vw;
@@ -146,11 +125,11 @@ MENU
         ul{
             flex-direction: row;
             justify-content: flex-end;
-            margin: 1rem 0;
+            margin: 0 0 1rem;
             padding-right: 2rem;
         }
         li{
-            padding-left: 1rem;
+            padding: 1rem 0 1rem 1rem;
         }
     }
     .l-main-menu-content{
@@ -253,7 +232,32 @@ HAMBURGER
         }
     }
 }
-
+/*
+BACK TO TOP BUTTON
+*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 0;
+    z-index: 99;   
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 100%;
+    i{
+        font-size: 2rem;
+        color: map-get($colors, title);
+        transition: .3s;
+    }
+}
+#myBtn:hover {
+    i{
+        color: map-get($colors, color1);
+    }
+    
+}
 /*
 FOOTER
 */
@@ -284,7 +288,7 @@ footer{
     margin-top: 1rem;
 }
 
-.mail-picker{
+.mail-picker, .news-picker{
     width: calc(100% - 2rem);
     display: flex;
     height: 2rem;
@@ -292,14 +296,22 @@ footer{
     input{
         width: 80%;
         border: 1px solid map-get($colors, color3);
+        padding-left: 1rem;
     }
     
     button{
+        /*on donne une perspective à l'élément sur l'axe z*/
+        transform: perspective(100px) translateZ(0px);
+        transition: transform 100ms linear;
         background: map-get($colors, color1);
         color: map-get($colors, color3);
         width: 20%;
         cursor: pointer;
         border: none;
+        &:hover{
+            /*on (agrandi) l'élément clickable en le rapprochant de l'utilisateur de 5px*/
+            transform: perspective(100px) translateZ(5px);
+        }
         span{
             font-size: 1.5rem;
         }
@@ -313,7 +325,7 @@ footer{
 .fab:hover{
     transform: perspective(50px) translateZ(10px);
     color: map-get($colors, color1);
-    transition: transform 0.3s;
+    transition: transform 200ms linear;
 }
 @media only screen and (min-width: map-get($breakpoints , md)){
     footer{
@@ -322,5 +334,11 @@ footer{
     .social-footer{
         margin: 1rem 0 0 1rem;
         font-size: .9rem;
+    }
+}
+@media only screen and (min-width: map-get($breakpoints , lg)){
+    .social-footer{
+        margin: 1rem 0 0 1rem;
+        font-size: 1.2rem;
     }
 }

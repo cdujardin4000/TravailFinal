@@ -6,13 +6,6 @@ html{
 body{
     font-size: 14px;
 }
-header{
-
-    
-}
-main{
-    
-}
 
 h1{
     text-transform: uppercase;
@@ -20,18 +13,11 @@ h1{
     font-weight: bold;
     color: map-get($colors, title);  /*au cas ou le designer voudrait changer les couleurs*/
 }
-h1::before {  
 
+textarea, input{
+    font-family: inherit;
+    font-size: inherit;
 }
-
-h2 {
-
-    
-}
-h2::before {  
-
-}
-
 
 h4{
     text-align: center;
@@ -58,4 +44,8 @@ i{
     color: map-get($colors, color3);
 }
 
-
+@media only screen and (min-width: map-get($breakpoints , lg)){
+    p{
+        font-size: .9rem;
+}
+}

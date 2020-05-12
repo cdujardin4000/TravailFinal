@@ -7,11 +7,31 @@
         text-transform: capitalize;
         text-align: center;
         margin-bottom: 2rem;
+
     }
     li{
-        display: inline-block;
+        font-size: 1rem;
         color: map-get($colors, color3);
+        display: inline-block;
         text-transform: capitalize;
+
+        &:after{
+            display: inline-block;
+            content:"\f35a";
+            font-family: "Font Awesome 5 Free";
+            padding: 0 1rem 0 .5rem;
+        }
+        &:last-child{
+            &:after{
+                content: "";
+            }
+        }
+        a{
+            color: map-get($colors, color3);
+            &:hover{
+                color: map-get($colors, color5);
+            }
+        }
     }
     nav{
         text-align: center;
@@ -45,6 +65,7 @@
     border-radius: 10px;
 }
 .pct70, .pct90, .pct80, .pct85, .pct95{
+    display: inline-block;
     background: linear-gradient(to right, map-get($colors, color1), map-get($colors, color2));
     height: .8rem;
     border-radius: 10px;

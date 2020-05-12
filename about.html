@@ -19,7 +19,7 @@
                         </div>
                         <ul>
                             <li><a href="index.html" class="link">home</a></li>
-                            <li><a href="about.html" class="link menu-active">about</a></li>
+                            <li><a href="about.html" class="link is-active">about</a></li>
                             <li><a href="portfolio.html" class="link">portfolio</a></li>
                             <li><a href="blog.html" class="link">blog</a></li>
                             <li><a href="contact.html" class="link">contact</a></li>
@@ -45,7 +45,7 @@
             <h1 class="banner-title">about me</h1>
             <nav>
                 <ul>
-                    <li>home</li>
+                    <li><a href="">home</a></li>
                     <li>about me</li>
                 </ul>
             </nav>
@@ -82,30 +82,25 @@
                     <div class="col-12 col-md-6 col-lg-6">
                         <p class="techno">after effects 70%</p>
                         <div class="progress-bar">
-                            <div class="pct70">
-                            </div>
+                            <span class="pct70"></span>
                         </div>
                         <p class="techno">photoshop 90%</p>
                         <div class="progress-bar">
-                            <div class="pct90">
-                            </div>
+                            <span class="pct90"></span>
                         </div>
                         <p class="techno">illustrator 80%</p>
                         <div class="progress-bar">
-                            <div class="pct80">
-                            </div>
+                            <span class="pct80"></span>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
                         <p class="techno">sublime 85%</p>
                         <div class="progress-bar">
-                            <div class="pct85">
-                            </div>
+                            <span class="pct85"></span>
                         </div>
                         <p class="techno">sketch 95%</p>
                         <div class="progress-bar">
-                            <div class="pct95">
-                            </div>
+                            <span class="pct95"></span>
                         </div>
                     </div>
                 </div>
@@ -169,7 +164,7 @@
                     <h2 class="footer-title">newsletter</h2>
                     <p>Stay updated in our latest trends.</p>
                     <form class="mail-picker">
-                        <input placeholder=" Enter your Email" type="text" id="email"  name="email"/>    
+                        <input value=" Enter your Email" onclick="this.value=''" type="text" id="email"  name="email"/>    
                         <button class="bnt-send" type="submit">
                             <span class="lnr lnr-arrow-right"></span>
                         </button>  

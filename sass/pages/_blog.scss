@@ -87,11 +87,15 @@
         margin: 1rem 0;
         font-size: .8rem;
         justify-content: start;
-        width: 100%
+        width: 100%;
+        color: map-get($colors, txt);
+        .lnr{
+            margin-left: .5rem;
+            
+            color: map-get($colors, title);
+        }
     }
-    .lnr{
-        margin-left: .5rem;
-    }
+
     img{
         margin: 2rem 0;
     }
@@ -103,16 +107,28 @@
         margin-left: 0;
     }
 }
-.tags{
+p.tags-article{
     text-transform: capitalize;
     margin: 2rem 0;
+    color: map-get($colors, title);
 }
+
 .bnt-article{
     color: map-get($colors, title);
     margin-left: 3rem;
     text-transform: capitalize;
 }
-
+@media only screen and (min-width: map-get($breakpoints , lg)){
+    .sec-blog-page{
+        .info{
+            font-size: 1rem;
+            .lnr{
+                margin-left: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
 /*PAGINATION*/
 
 .pagination{
@@ -127,15 +143,19 @@
         display: inline-block;
         padding: .5rem;
         cursor: pointer;
-        &:hover{
+        &:hover, &.is-active{
             background-color: map-get($colors, color1);
-            color: white;
+            color: map-get($colors, color3);
+            -webkit-box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);
+            -moz-box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);
+            box-shadow: 2px 2px 10px 0px rgba(153,153,153,1);
         }
     }
 }
 
 /*ASIDE*/
 aside{
+    margin: 3rem 1rem 1rem 1rem;
     .blogger{
         width: calc(100% - 2rem);
         display: block;
@@ -158,13 +178,18 @@ aside{
     padding-left: 2rem;
 }
 .search-btn{
+    cursor: pointer;
     position: relative;
     background: transparent;
     border: none;
     right: 3rem;
     color: map-get($colors, color3);
+    transform: perspective(100px) translateZ(0px);
+    transition: transform 100ms linear;
+    &:hover{
+        transform: perspective(100px) translateZ(10px);
+    }
     span{
-
         font-size: 1.5rem;
     }
 }
@@ -202,63 +227,107 @@ aside{
     padding: 1rem 0;
     background: map-get($colors, color1);
     color: map-get($colors, color3);
-    margin: 2rem 0;
+    margin: 4rem 0 3rem;
 }
+
+/*POPULAR*/
 .post{
+    margin: 1rem 0;
     display: flex;
+    min-height: 6rem;
     img{
-        width: 40%;
-        max-height: 5rem;
+        
+        max-height: 4rem;/*on donne une hauteur et largeur maximum pour eviter de trop deformer l'image*/
+        max-width: 8rem;
+        margin: auto 0;
     }
     .title-3{
         font-size: .8rem;
-        margin-top: 0;
+        margin: 0 0 0 1rem;
     }
 }
-.post > div{
-    display: inline-block;
-    width: 60%;
-}
+
 .info-box{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 .post-info{
     text-align: center;
     p{
-        margin: .5rem 1rem 2rem ;
+        margin: 0 0 0 1rem;
         text-align: left;
     }
 }
+.add{
+    width: 100%;
+    height: auto;
+    border: 1px solid map-get($colors, color5);
+    text-align: center;
+}
 .category{
-    width: calc(100% - 2rem);
+    width: calc(100% - 1.5rem);
     display: inline-block
+}
+.post-categories{
+    p{
+        margin: 1rem 0;
+    }
+}
+.news-picker{
+    padding: 0;
+    width: 100%;
+    
+    i{
+        width: 15%;
+        border: 1px solid map-get($colors, txt);
+        border-right: none;
+        color: map-get($colors, txt);
+        padding: 0 0 0 .2rem;
+        font-size: 1.5rem;
+        padding-top: .2rem;
+    }
+    input{
+        width: 60%;
+        border-top: 1px solid map-get($colors, txt);
+        border-bottom: 1px solid map-get($colors, txt);
+    }
+    button{
+        width: 25%;
+    }
 }
 .tags{
     a{
         display: inline-block;
-        padding: 0 .5rem .5rem .5rem;
+        padding: .5rem;
         line-height: 2rem;
         cursor: pointer;
+        margin-top: .5rem;
         &:hover{
             color: map-get($colors, color3);
             background: map-get($colors, color1);
-        }
-        &::after{
-            display: inline-block;
-            width: .1rem;
-            height: 2rem;
-            background: map-get($colors, txt);
-            content: "";
-            position: relative;
-            top: .7rem;
-            
-            left: .6rem;
+            -webkit-box-shadow: -2px -2px 5px 0px rgba(153,153,153,1);
+            -moz-box-shadow: -2px -2px 5px 0px rgba(153,153,153,1);
+            box-shadow: -2px -2px 5px 0px rgba(153,153,153,1);
         }
     }
 }
+
+
 @media only screen and (min-width: map-get($breakpoints , md)){
     .sec-ban-blog{
         margin-top: 4rem;
+        background-size: cover;
+        
     }
+    .news-picker{
+        button{
+            font-size: 0.6rem;
+            padding: 0;
+        }
+    }
+}
+@media only screen and (min-width: map-get($breakpoints , lg)){
+
 }

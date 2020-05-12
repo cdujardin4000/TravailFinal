@@ -1,0 +1,167 @@
+.sec-blog-page{
+    p{
+        margin: 1rem 0;
+    }
+    .title-article{
+        margin-bottom: 2rem;
+    }
+}
+#socialDetails{
+    text-align: left;
+}
+.p-special{
+    text-align: left;
+    padding-left: 2rem;
+}
+.gallery-article{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: calc(50% - 1rem);
+    }
+}
+.nav-article{
+    p{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.2rem;
+        color: map-get($colors, title);
+    }
+    p, h2{
+        margin: 0;
+    }
+    a{
+        cursor: pointer;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        width: calc(100% - 2rem);
+        display: flex;
+        padding: 0 1rem;
+        margin: 2rem 0;
+    }
+    img{
+        width: 20%;
+        margin: 0;
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+    .title-nav{
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+    .prev-post, .next-post{
+        width: 100%;
+        display: flex;
+    }
+    .prev-post-info{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .next-post{
+        p, h2{
+            text-align: right;
+        }
+        img{
+            margin: 0 0 0 2rem;
+        }
+    }
+}
+@media only screen and (min-width: map-get($breakpoints , md)){
+    .nav-article{
+        ul{
+            flex-direction: row;
+            margin-top: 4rem;
+        }
+        li{
+            width: calc(50% - 2rem);
+        }
+    }
+}
+.sec-comment{
+    padding: 0 1rem;
+    p{
+        margin: 1rem 0;
+    }
+    .comment-box, .re-comment-box{
+        margin: 1rem 0;
+        max-width: 100%;
+        display: flex;
+    }
+    img, .black-sheep{
+        width: 20%;
+        max-width: 3rem;
+        margin: 1rem 1rem 0 0;
+        max-height: 3rem;
+    }
+    .comment-boxing{
+        width: 50%;
+        margin-right: 5rem;
+    }
+    .re-comment-box{
+        margin-left: 2rem;
+    }
+    a{
+        margin-top: 2rem;
+        text-transform: uppercase;
+        color: map-get($colors, title);
+        font-size: 1rem;
+    }
+    .commenter-name{
+        text-transform: capitalize;
+        color: map-get($colors, title);
+        font-size: 1rem;
+    }
+    .comment{
+        margin-top: 2rem;
+    }
+    time{
+        color: rgb(173, 169, 169)
+    }
+}
+
+.sec-new-comment{
+    padding-bottom: 4rem;
+    form{
+        max-width: 100%;
+    } 
+    input, textarea{
+        margin: 1rem;
+        border: 2px solid transparent; /*on donne une taille de 2 px transparent a la bordure pour ne pas avoir de 
+                                        avoir de déplacement d'éléments qd les bordures deviennent vivibles*/
+        color: map-get($colors, txt);
+        &:hover{
+            border-image-source: linear-gradient(to left, map-get($colors, color1), map-get($colors, color2));
+            border-width: 2px;
+            border-image-slice: 1;
+        }
+        &:focus{
+            border-image-source: linear-gradient(to right, map-get($colors, color1), map-get($colors, color2));
+            border-width: 2px;
+            border-image-slice: 1;
+        }
+    }
+    input{
+        height: 3rem;
+        padding-left: 1rem;
+        width: calc(100% - 3.5rem);
+    }
+    textarea{
+        height: 6rem;
+        padding: 1rem ;
+        width: calc(100% - 4.5rem);
+        margin-bottom: 4rem;
+    }
+    .btn-1{
+        position: relative;
+        left: calc(50% - 96px);/*50% - la moitie de la largeur de l'élément*/
+        margin: 2rem 0;
+        background: map-get($colors, color1);
+    }
+}

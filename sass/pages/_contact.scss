@@ -1,0 +1,143 @@
+.sec-map{
+    iframe{
+        margin: 4rem 0;
+        width: 100%;
+        height: 20rem;
+    }
+}
+
+.contact-info{
+    display: flex;
+    span{
+        font-size: 2.5rem;
+        padding-left: 1rem;
+    }
+    p{
+        
+        margin: 1rem;
+        &:first-child{
+            color: map-get($colors, title);
+            font-size: 1rem;
+        }
+    }
+    .contact-lnr{
+        width: 20%;
+        margin: auto;
+        padding-left: 1rem;
+        color: map-get($colors, color1);
+    }
+    .info-contact{
+        width: 80%;
+    } 
+}
+
+.contact-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    input, textarea{
+        margin: 1rem;
+        width: calc(100% - 3rem);
+        border: 2px solid map-get($colors, color5);
+        color: map-get($colors, txt);
+        &:hover{
+            border-image-source: linear-gradient(to left, map-get($colors, color1), map-get($colors, color2));
+            border-width: 2px;
+            border-image-slice: 1;
+        }
+        &:focus{
+            border-image-source: linear-gradient(to right, map-get($colors, color1), map-get($colors, color2));
+            border-width: 2px;
+            border-image-slice: 1;
+        }
+    }
+    input{
+        
+        padding-left: 1rem;
+        height: 2rem;
+    }
+    textarea{
+        
+        padding: 1rem 0 0 1rem;
+        height: 6rem;
+        
+    }
+}
+.btn-box{
+    position: relative;
+}
+#sendContact{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.sec-contact{
+    padding-bottom: 5rem;
+    form{
+        margin-top: 3rem
+    }
+}
+
+@media only screen and (min-width: map-get($breakpoints , md)){
+    .sec-map{
+        padding: 0 2rem ;
+        iframe{
+            height: 25rem;
+            margin: 4rem 2rem;
+            width: calc(100% - 4rem);
+        }
+    }
+    .sec-contact{
+        
+        form{
+            margin-top: 1rem;
+        }
+    }
+    .boxing{
+        margin-top: 2rem;
+    }
+    .contact-box{
+        input, textarea{
+            width: calc(100% - 3rem);
+            
+        }
+        input{
+            height: 3rem;
+        }
+        textarea{
+            height: 100%;
+        }
+    }
+    .contact-info{
+        margin: .5rem 0;
+        span{
+            padding-left: 0;
+            font-size: 1.5rem;
+        }
+        p{
+            margin: .5rem;
+            font-size: .6rem;
+            &:first-child{
+                font-size: .8rem;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: map-get($breakpoints , lg)){
+
+    .contact-info{
+        
+        .contact-lnr{
+            span{
+                font-size: 2.5rem;
+            }
+        }
+        p{
+            font-size: .8rem;
+            &:first-child{
+                font-size: 1rem;
+            }
+        }
+    }
+}
