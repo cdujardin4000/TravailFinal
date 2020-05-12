@@ -262,13 +262,19 @@ aside{
 }
 .add{
     width: 100%;
-    height: auto;
+    height: 10rem;
     border: 1px solid map-get($colors, color5);
     text-align: center;
 }
 .category{
     width: calc(100% - 1.5rem);
-    display: inline-block
+    display: inline-block;
+    a{
+        color: map-get($colors, txt);
+        &:hover{
+            color: map-get($colors, color1);
+        }
+    }
 }
 .post-categories{
     p{
@@ -297,8 +303,9 @@ aside{
         width: 25%;
     }
 }
-.tags{
+.tags-clouds{
     a{
+        color: map-get($colors, title);
         display: inline-block;
         padding: .5rem;
         line-height: 2rem;

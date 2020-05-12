@@ -163,5 +163,6 @@
         left: calc(50% - 96px);/*50% - la moitie de la largeur de l'élément*/
         margin: 2rem 0;
         background: map-get($colors, color1);
+        border: none;
     }
 }

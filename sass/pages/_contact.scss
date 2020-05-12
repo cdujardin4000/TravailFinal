@@ -65,7 +65,11 @@
 }
 .btn-box{
     position: relative;
+    .btn-1{
+        border: none;
+    }
 }
+
 #sendContact{
     position: absolute;
     top: 1rem;

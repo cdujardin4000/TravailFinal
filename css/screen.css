@@ -279,7 +279,7 @@ h1 {
   /*au cas ou le designer voudrait changer les couleurs*/ }
 
 /* line 17, ../sass/base/_base.scss */
-textarea, input {
+textarea, input, button {
   font-family: inherit;
   font-size: inherit; }
 
@@ -1027,84 +1027,85 @@ footer a {
   width: calc(100% - 2rem);
   background: #cac3c3;
   height: .8rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+  border: 3px solid #e4e4e4; }
 
-/* line 67, ../sass/pages/_about.scss */
+/* line 68, ../sass/pages/_about.scss */
 .pct70, .pct90, .pct80, .pct85, .pct95 {
   display: inline-block;
   background: linear-gradient(to right, #8490ff, #62bdfc);
   height: .8rem;
   border-radius: 10px; }
 
-/* line 73, ../sass/pages/_about.scss */
+/* line 74, ../sass/pages/_about.scss */
 .pct70 {
   width: 70%; }
 
-/* line 76, ../sass/pages/_about.scss */
+/* line 77, ../sass/pages/_about.scss */
 .pct90 {
   width: 90%; }
 
-/* line 79, ../sass/pages/_about.scss */
+/* line 80, ../sass/pages/_about.scss */
 .pct80 {
   width: 80%; }
 
-/* line 82, ../sass/pages/_about.scss */
+/* line 83, ../sass/pages/_about.scss */
 .pct85 {
   width: 85%; }
 
-/* line 85, ../sass/pages/_about.scss */
+/* line 86, ../sass/pages/_about.scss */
 .pct95 {
   width: 95%; }
 
-/* line 89, ../sass/pages/_about.scss */
+/* line 90, ../sass/pages/_about.scss */
 .sec-expertness p {
   margin: 1rem; }
 
-/* line 94, ../sass/pages/_about.scss */
+/* line 95, ../sass/pages/_about.scss */
 .testimonial-1, .testimonial-2 {
   display: flex; }
-/* line 96, ../sass/pages/_about.scss */
+/* line 97, ../sass/pages/_about.scss */
 .testimonial-1 p, .testimonial-2 p {
   margin-top: 1rem; }
 
-/* line 100, ../sass/pages/_about.scss */
+/* line 101, ../sass/pages/_about.scss */
 .testimonial-2 {
   display: none; }
 
-/* line 103, ../sass/pages/_about.scss */
+/* line 104, ../sass/pages/_about.scss */
 .commenter {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 1.4rem;
   color: #222222; }
 
-/* line 109, ../sass/pages/_about.scss */
+/* line 110, ../sass/pages/_about.scss */
 .testimonial-img {
   width: 15%;
   margin-left: 1rem; }
-/* line 112, ../sass/pages/_about.scss */
+/* line 113, ../sass/pages/_about.scss */
 .testimonial-img img {
   width: 100%;
   margin-top: 1rem; }
 
-/* line 118, ../sass/pages/_about.scss */
+/* line 119, ../sass/pages/_about.scss */
 .testimonial-info {
   width: 85%;
   padding-left: 1rem; }
 
 @media only screen and (min-width: 720px) {
-  /* line 124, ../sass/pages/_about.scss */
+  /* line 125, ../sass/pages/_about.scss */
   .sec-banner {
     margin-top: 4rem; }
 
-  /* line 127, ../sass/pages/_about.scss */
+  /* line 128, ../sass/pages/_about.scss */
   .testimonial-2 {
     display: flex; }
-  /* line 129, ../sass/pages/_about.scss */
+  /* line 130, ../sass/pages/_about.scss */
   .testimonial-2 img {
     border-radius: 100%; } }
 @media only screen and (min-width: 960px) {
-  /* line 137, ../sass/pages/_about.scss */
+  /* line 138, ../sass/pages/_about.scss */
   .testimonial-1 img, .testimonial-2 img {
     max-width: 70%; } }
 /*BANIERE*/
@@ -1391,7 +1392,7 @@ aside .blogger {
 /* line 263, ../sass/pages/_blog.scss */
 .add {
   width: 100%;
-  height: auto;
+  height: 10rem;
   border: 1px solid #dadada;
   text-align: center; }
 
@@ -1399,16 +1400,22 @@ aside .blogger {
 .category {
   width: calc(100% - 1.5rem);
   display: inline-block; }
-
+/* line 272, ../sass/pages/_blog.scss */
+.category a {
+  color: #777777; }
 /* line 274, ../sass/pages/_blog.scss */
+.category a:hover {
+  color: #8490ff; }
+
+/* line 280, ../sass/pages/_blog.scss */
 .post-categories p {
   margin: 1rem 0; }
 
-/* line 278, ../sass/pages/_blog.scss */
+/* line 284, ../sass/pages/_blog.scss */
 .news-picker {
   padding: 0;
   width: 100%; }
-/* line 282, ../sass/pages/_blog.scss */
+/* line 288, ../sass/pages/_blog.scss */
 .news-picker i {
   width: 15%;
   border: 1px solid #777777;
@@ -1417,24 +1424,25 @@ aside .blogger {
   padding: 0 0 0 .2rem;
   font-size: 1.5rem;
   padding-top: .2rem; }
-/* line 291, ../sass/pages/_blog.scss */
+/* line 297, ../sass/pages/_blog.scss */
 .news-picker input {
   width: 60%;
   border-top: 1px solid #777777;
   border-bottom: 1px solid #777777; }
-/* line 296, ../sass/pages/_blog.scss */
+/* line 302, ../sass/pages/_blog.scss */
 .news-picker button {
   width: 25%; }
 
-/* line 301, ../sass/pages/_blog.scss */
-.tags a {
+/* line 307, ../sass/pages/_blog.scss */
+.tags-clouds a {
+  color: #222222;
   display: inline-block;
   padding: .5rem;
   line-height: 2rem;
   cursor: pointer;
   margin-top: .5rem; }
-/* line 307, ../sass/pages/_blog.scss */
-.tags a:hover {
+/* line 314, ../sass/pages/_blog.scss */
+.tags-clouds a:hover {
   color: #fff;
   background: #8490ff;
   -webkit-box-shadow: -2px -2px 5px 0px #999999;
@@ -1442,12 +1450,12 @@ aside .blogger {
   box-shadow: -2px -2px 5px 0px #999999; }
 
 @media only screen and (min-width: 720px) {
-  /* line 319, ../sass/pages/_blog.scss */
+  /* line 326, ../sass/pages/_blog.scss */
   .sec-ban-blog {
     margin-top: 4rem;
     background-size: cover; }
 
-  /* line 325, ../sass/pages/_blog.scss */
+  /* line 332, ../sass/pages/_blog.scss */
   .news-picker button {
     font-size: 0.6rem;
     padding: 0; } }
@@ -1514,70 +1522,73 @@ aside .blogger {
 /* line 66, ../sass/pages/_contact.scss */
 .btn-box {
   position: relative; }
+/* line 68, ../sass/pages/_contact.scss */
+.btn-box .btn-1 {
+  border: none; }
 
-/* line 69, ../sass/pages/_contact.scss */
+/* line 73, ../sass/pages/_contact.scss */
 #sendContact {
   position: absolute;
   top: 1rem;
   right: 1rem; }
 
-/* line 74, ../sass/pages/_contact.scss */
+/* line 78, ../sass/pages/_contact.scss */
 .sec-contact {
   padding-bottom: 5rem; }
-/* line 76, ../sass/pages/_contact.scss */
+/* line 80, ../sass/pages/_contact.scss */
 .sec-contact form {
   margin-top: 3rem; }
 
 @media only screen and (min-width: 720px) {
-  /* line 82, ../sass/pages/_contact.scss */
+  /* line 86, ../sass/pages/_contact.scss */
   .sec-map {
     padding: 0 2rem; }
-  /* line 84, ../sass/pages/_contact.scss */
+  /* line 88, ../sass/pages/_contact.scss */
   .sec-map iframe {
     height: 25rem;
     margin: 4rem 2rem;
     width: calc(100% - 4rem); }
 
-  /* line 92, ../sass/pages/_contact.scss */
+  /* line 96, ../sass/pages/_contact.scss */
   .sec-contact form {
     margin-top: 1rem; }
 
-  /* line 96, ../sass/pages/_contact.scss */
+  /* line 100, ../sass/pages/_contact.scss */
   .boxing {
     margin-top: 2rem; }
 
-  /* line 100, ../sass/pages/_contact.scss */
+  /* line 104, ../sass/pages/_contact.scss */
   .contact-box input, .contact-box textarea {
     width: calc(100% - 3rem); }
-  /* line 104, ../sass/pages/_contact.scss */
+  /* line 108, ../sass/pages/_contact.scss */
   .contact-box input {
     height: 3rem; }
-  /* line 107, ../sass/pages/_contact.scss */
+  /* line 111, ../sass/pages/_contact.scss */
   .contact-box textarea {
     height: 100%; }
 
-  /* line 111, ../sass/pages/_contact.scss */
+  /* line 115, ../sass/pages/_contact.scss */
   .contact-info {
     margin: .5rem 0; }
-  /* line 113, ../sass/pages/_contact.scss */
+  /* line 117, ../sass/pages/_contact.scss */
   .contact-info span {
     padding-left: 0;
     font-size: 1.5rem; }
-  /* line 117, ../sass/pages/_contact.scss */
+  /* line 121, ../sass/pages/_contact.scss */
   .contact-info p {
     margin: .5rem;
     font-size: .6rem; }
-  /* line 120, ../sass/pages/_contact.scss */
+  /* line 124, ../sass/pages/_contact.scss */
   .contact-info p:first-child {
     font-size: .8rem; } }
 @media only screen and (min-width: 960px) {
-  /* line 132, ../sass/pages/_contact.scss */
+  /* line 136, ../sass/pages/_contact.scss */
   .contact-info .contact-lnr span {
     font-size: 2.5rem; }
-  /* line 136, ../sass/pages/_contact.scss */
+  /* line 140, ../sass/pages/_contact.scss */
   .contact-info p {
     font-size: .8rem; }
-  /* line 138, ../sass/pages/_contact.scss */
+  /* line 142, ../sass/pages/_contact.scss */
   .contact-info p:first-child {
     font-size: 1rem; } }
 /* line 2, ../sass/pages/_article.scss */
@@ -1744,4 +1755,5 @@ aside .blogger {
   left: calc(50% - 96px);
   /*50% - la moitie de la largeur de l'├®l├®ment*/
   margin: 2rem 0;
-  background: #8490ff; }
+  background: #8490ff;
+  border: none; }
