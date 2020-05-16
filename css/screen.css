@@ -281,15 +281,16 @@ h1 {
 /* line 17, ../sass/base/_base.scss */
 textarea, input, button {
   font-family: inherit;
-  font-size: inherit; }
+  font-size: inherit;
+  border-radius: 0; }
 
-/* line 22, ../sass/base/_base.scss */
+/* line 23, ../sass/base/_base.scss */
 h4 {
   text-align: center;
   margin: 3rem 0 2rem;
   font-size: 1rem; }
 
-/* line 27, ../sass/base/_base.scss */
+/* line 28, ../sass/base/_base.scss */
 p {
   color: #777777;
   margin: 3rem 1rem;
@@ -297,23 +298,23 @@ p {
   line-height: 1.5rem;
   letter-spacing: .1rem; }
 
-/* line 34, ../sass/base/_base.scss */
+/* line 35, ../sass/base/_base.scss */
 a {
   text-decoration: none; }
 
-/* line 37, ../sass/base/_base.scss */
+/* line 38, ../sass/base/_base.scss */
 img {
   width: 100%;
   height: auto; }
 
-/* line 41, ../sass/base/_base.scss */
+/* line 42, ../sass/base/_base.scss */
 i {
   cursor: pointer;
   padding-right: .5rem;
   color: #fff; }
 
 @media only screen and (min-width: 960px) {
-  /* line 48, ../sass/base/_base.scss */
+  /* line 49, ../sass/base/_base.scss */
   p {
     font-size: .9rem; } }
 /* line 2, ../sass/layout/_layout.scss */
@@ -1069,60 +1070,63 @@ footer a {
 /* line 96, ../sass/pages/_about.scss */
 .feedback {
   background: #faf9ff;
-  padding: 3rem 0; }
+  padding: 3rem 0 5rem; }
 
 /* line 100, ../sass/pages/_about.scss */
-.testimonial-1, .testimonial-2 {
-  background: #8490ff;
+.testimonials {
   display: flex; }
+
 /* line 103, ../sass/pages/_about.scss */
+.testimonial-1, .testimonial-2 {
+  background: #fff;
+  display: flex; }
+/* line 106, ../sass/pages/_about.scss */
 .testimonial-1 p, .testimonial-2 p {
   margin-top: 1rem; }
 
-/* line 108, ../sass/pages/_about.scss */
+/* line 111, ../sass/pages/_about.scss */
 .testimonial-2 {
   display: none; }
 
-/* line 112, ../sass/pages/_about.scss */
+/* line 115, ../sass/pages/_about.scss */
 .commenter {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 1.4rem;
   color: #222222; }
 
-/* line 118, ../sass/pages/_about.scss */
+/* line 121, ../sass/pages/_about.scss */
 .testimonial-img {
   width: 15%;
   margin-left: 1rem; }
-/* line 121, ../sass/pages/_about.scss */
+/* line 124, ../sass/pages/_about.scss */
 .testimonial-img img {
   width: 100%;
   margin-top: 1rem; }
 
-/* line 127, ../sass/pages/_about.scss */
+/* line 130, ../sass/pages/_about.scss */
 .testimonial-info {
   width: 85%;
   padding-left: 1rem; }
 
 @media only screen and (min-width: 720px) {
-  /* line 133, ../sass/pages/_about.scss */
+  /* line 136, ../sass/pages/_about.scss */
   .sec-banner {
     margin-top: 4rem; }
 
-  /* line 136, ../sass/pages/_about.scss */
+  /* line 140, ../sass/pages/_about.scss */
   .testimonial-2 {
     display: flex; }
-  /* line 138, ../sass/pages/_about.scss */
+  /* line 143, ../sass/pages/_about.scss */
   .testimonial-2 img {
     border-radius: 100%; }
 
-  /* line 142, ../sass/pages/_about.scss */
+  /* line 147, ../sass/pages/_about.scss */
   .testimonial-1, .testimonial-2 {
-    width: calc(100% - 1.5rem);
-    left: .7rem;
-    position: relative; } }
+    width: calc(50% - 2rem);
+    margin: 0 auto; } }
 @media only screen and (min-width: 960px) {
-  /* line 151, ../sass/pages/_about.scss */
+  /* line 155, ../sass/pages/_about.scss */
   .testimonial-1 img, .testimonial-2 img {
     max-width: 70%; } }
 /*BANIERE*/
@@ -1476,136 +1480,140 @@ aside .blogger {
   .news-picker button {
     font-size: 0.6rem;
     padding: 0; } }
-/* line 2, ../sass/pages/_contact.scss */
+/* line 1, ../sass/pages/_contact.scss */
+.contact-layout {
+  background: #faf9ff; }
+
+/* line 5, ../sass/pages/_contact.scss */
 .sec-map iframe {
   margin: 4rem 0;
   width: 100%;
   height: 20rem; }
 
-/* line 9, ../sass/pages/_contact.scss */
+/* line 12, ../sass/pages/_contact.scss */
 .contact-info {
   display: flex; }
-/* line 11, ../sass/pages/_contact.scss */
+/* line 14, ../sass/pages/_contact.scss */
 .contact-info span {
   font-size: 2.5rem;
   padding-left: 1rem; }
-/* line 15, ../sass/pages/_contact.scss */
+/* line 18, ../sass/pages/_contact.scss */
 .contact-info p {
   margin: 1rem; }
-/* line 18, ../sass/pages/_contact.scss */
+/* line 21, ../sass/pages/_contact.scss */
 .contact-info p:first-child {
   color: #222222;
   font-size: 1rem; }
-/* line 23, ../sass/pages/_contact.scss */
+/* line 26, ../sass/pages/_contact.scss */
 .contact-info .contact-lnr {
   width: 20%;
   margin: auto;
   padding-left: 1rem;
   color: #8490ff; }
-/* line 29, ../sass/pages/_contact.scss */
+/* line 32, ../sass/pages/_contact.scss */
 .contact-info .info-contact {
   width: 80%; }
 
-/* line 34, ../sass/pages/_contact.scss */
+/* line 37, ../sass/pages/_contact.scss */
 .contact-box {
   height: 100%;
   display: flex;
   flex-direction: column; }
-/* line 38, ../sass/pages/_contact.scss */
+/* line 41, ../sass/pages/_contact.scss */
 .contact-box input, .contact-box textarea {
   margin: 1rem;
   width: calc(100% - 3rem);
   border: 2px solid #dadada;
   color: #777777; }
-/* line 43, ../sass/pages/_contact.scss */
+/* line 46, ../sass/pages/_contact.scss */
 .contact-box input:hover, .contact-box textarea:hover {
   border-image-source: linear-gradient(to left, #8490ff, #62bdfc);
   border-width: 2px;
   border-image-slice: 1; }
-/* line 48, ../sass/pages/_contact.scss */
+/* line 51, ../sass/pages/_contact.scss */
 .contact-box input:focus, .contact-box textarea:focus {
   border-image-source: linear-gradient(to right, #8490ff, #62bdfc);
   border-width: 2px;
   border-image-slice: 1; }
-/* line 54, ../sass/pages/_contact.scss */
+/* line 57, ../sass/pages/_contact.scss */
 .contact-box input {
   padding-left: 1rem;
   height: 2rem; }
-/* line 59, ../sass/pages/_contact.scss */
+/* line 62, ../sass/pages/_contact.scss */
 .contact-box textarea {
   padding: 1rem 0 0 1rem;
   height: 6rem; }
 
-/* line 66, ../sass/pages/_contact.scss */
+/* line 69, ../sass/pages/_contact.scss */
 .btn-box {
   position: relative; }
-/* line 68, ../sass/pages/_contact.scss */
+/* line 71, ../sass/pages/_contact.scss */
 .btn-box .btn-1 {
   border: none; }
 
-/* line 73, ../sass/pages/_contact.scss */
+/* line 76, ../sass/pages/_contact.scss */
 #sendContact {
   position: absolute;
   top: 1rem;
   right: 1rem; }
 
-/* line 78, ../sass/pages/_contact.scss */
+/* line 81, ../sass/pages/_contact.scss */
 .sec-contact {
   padding-bottom: 5rem; }
-/* line 80, ../sass/pages/_contact.scss */
+/* line 83, ../sass/pages/_contact.scss */
 .sec-contact form {
   margin-top: 3rem; }
 
 @media only screen and (min-width: 720px) {
-  /* line 86, ../sass/pages/_contact.scss */
+  /* line 89, ../sass/pages/_contact.scss */
   .sec-map {
     padding: 0 2rem; }
-  /* line 88, ../sass/pages/_contact.scss */
+  /* line 91, ../sass/pages/_contact.scss */
   .sec-map iframe {
     height: 25rem;
     margin: 4rem 2rem;
     width: calc(100% - 4rem); }
 
-  /* line 96, ../sass/pages/_contact.scss */
+  /* line 99, ../sass/pages/_contact.scss */
   .sec-contact form {
     margin-top: 1rem; }
 
-  /* line 100, ../sass/pages/_contact.scss */
+  /* line 103, ../sass/pages/_contact.scss */
   .boxing {
     margin-top: 2rem; }
 
-  /* line 104, ../sass/pages/_contact.scss */
+  /* line 107, ../sass/pages/_contact.scss */
   .contact-box input, .contact-box textarea {
     width: calc(100% - 3rem); }
-  /* line 108, ../sass/pages/_contact.scss */
+  /* line 111, ../sass/pages/_contact.scss */
   .contact-box input {
     height: 3rem; }
-  /* line 111, ../sass/pages/_contact.scss */
+  /* line 114, ../sass/pages/_contact.scss */
   .contact-box textarea {
     height: 100%; }
 
-  /* line 115, ../sass/pages/_contact.scss */
+  /* line 118, ../sass/pages/_contact.scss */
   .contact-info {
     margin: .5rem 0; }
-  /* line 117, ../sass/pages/_contact.scss */
+  /* line 120, ../sass/pages/_contact.scss */
   .contact-info span {
     padding-left: 0;
     font-size: 1.5rem; }
-  /* line 121, ../sass/pages/_contact.scss */
+  /* line 124, ../sass/pages/_contact.scss */
   .contact-info p {
     margin: .5rem;
     font-size: .6rem; }
-  /* line 124, ../sass/pages/_contact.scss */
+  /* line 127, ../sass/pages/_contact.scss */
   .contact-info p:first-child {
     font-size: .8rem; } }
 @media only screen and (min-width: 960px) {
-  /* line 136, ../sass/pages/_contact.scss */
+  /* line 139, ../sass/pages/_contact.scss */
   .contact-info .contact-lnr span {
     font-size: 2.5rem; }
-  /* line 140, ../sass/pages/_contact.scss */
+  /* line 143, ../sass/pages/_contact.scss */
   .contact-info p {
     font-size: .8rem; }
-  /* line 142, ../sass/pages/_contact.scss */
+  /* line 145, ../sass/pages/_contact.scss */
   .contact-info p:first-child {
     font-size: 1rem; } }
 /* line 2, ../sass/pages/_article.scss */

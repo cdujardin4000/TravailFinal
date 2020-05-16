@@ -95,10 +95,13 @@
 /*TESTIMONIAL*/
 .feedback{
     background: map-get($colors, bg);
-    padding: 3rem 0;
+    padding: 3rem 0 5rem;
+}
+.testimonials{
+    display: flex;
 }
 .testimonial-1, .testimonial-2{
-    background: map-get($colors, color1);
+    background: map-get($colors, color3);
     display: flex;
     p{
         margin-top: 1rem;
@@ -133,16 +136,17 @@
     .sec-banner{
         margin-top: 4rem;
     }
+
     .testimonial-2{
+        
         display: flex;
         img{
             border-radius: 100%;
         }
     }
     .testimonial-1, .testimonial-2{
-        width: calc(100% - 1.5rem);
-        left: .7rem;
-        position: relative;
+        width: calc(50% - 2rem);
+        margin: 0 auto;
     }
 }
 
