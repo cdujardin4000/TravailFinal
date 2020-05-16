@@ -25,7 +25,7 @@
 }
 
 .title-2{
-    margin: 8rem 0 2rem;
+    margin: 5rem 0 2rem;
     font-size: 2rem;
     line-height: 2rem;
     text-transform: capitalize;
@@ -58,15 +58,18 @@
 }
 
 /*IMAGES*/
-.img-box{
-        padding: 5rem;
-        width: calc(100% - 10rem);
 
+.pres-1{
+    background: map-get($colors, bg);
 }
 .pres-2{
     img{
         margin-top: 2rem;
     }
+}
+.img-box{
+        padding: 5rem;
+        width: calc(100% - 10rem);
 }
 .service{
     text-align: center;
@@ -124,6 +127,7 @@
 
 /*BLOG*/
 .sec-blog{
+    padding: 1rem 0 3rem;
     .img-box{
         padding: 0 1rem;
         width: calc(100% - 2rem);
@@ -176,7 +180,6 @@
 
 /*BANIERE-LABEL*/
 .sec-ban-logo{
-    margin-top: 5rem;
     padding: 5rem 0;
     background: linear-gradient(to right, map-get($colors, color1), map-get($colors, color2));
     img{
@@ -191,11 +194,6 @@
 }
 
 @media only screen and (min-width: map-get($breakpoints , md)){
-    /*on descend le contenu pour laisser la place au menu*/
-    .sec-about{
-        margin-top: 8rem;
-    }
-
     /*on rend les elements cachés visibles on passe en flex pour les aligner horizontalement. 
     on donne une taille de 15% afin de leur laisser de place pour les marges*/
     .label{
@@ -212,21 +210,21 @@
     /*on diminue le padding qu'on avait mis en smartphone afin d'avoir des images de meme taille. 
     cela augmente la taille de la photo du dessus. on ajoute du margin pour obtenir le résultat désiré*/
     .img-box{
-        padding: 1rem;
-        margin-bottom: 5rem;
+        padding: 1rem 1rem 0;
     }
     .pres-2{
         img{
-            margin-top: 9rem;
+            margin-top: 11rem;
         }
     }
     /*on recentre le contenu par rapport au reste*/
     .presentation{
-        padding-left: 4rem;
+        padding-left: 2rem;
     }
     /*adaptation des marges pour placer les éléments au mieux */ 
+    /*on descend le contenu pour laisser la place au menu*/
     .pres-1{
-        margin-top: 3rem;
+        padding-top: 8rem;
         .hello{
             margin-top: 6rem;
         }

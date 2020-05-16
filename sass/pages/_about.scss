@@ -87,19 +87,27 @@
     width: 95%;
 }
 .sec-expertness{
+    padding-bottom: 5rem;
     p{
         margin: 1rem;
     }
 }
-
+/*TESTIMONIAL*/
+.feedback{
+    background: map-get($colors, bg);
+    padding: 3rem 0;
+}
 .testimonial-1, .testimonial-2{
+    background: map-get($colors, color1);
     display: flex;
     p{
         margin-top: 1rem;
     }
 }
+
 .testimonial-2{
     display: none;
+    
 }
 .commenter{
     text-transform: capitalize;
@@ -130,6 +138,11 @@
         img{
             border-radius: 100%;
         }
+    }
+    .testimonial-1, .testimonial-2{
+        width: calc(100% - 1.5rem);
+        left: .7rem;
+        position: relative;
     }
 }
 
