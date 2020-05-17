@@ -62,25 +62,25 @@
                                     <p class="tags-article">food, technology, politics, lifestyle</p>
                                     <div class="row">
                                         <div class="col-6 col-md-12 col-lg-12">
-                                            <div class="info">
+                                            <div class="info-blog">
                                                 <span>Mark Wiens</span>
                                                 <span class="lnr lnr-user"></span>
                                             </div>
                                         </div>
                                         <div class="col-6 col-md-12 col-lg-12">
-                                            <div class="info">
+                                            <div class="info-blog">
                                                 <time datetime= "2017-12-12">12 dec 2017</time>
                                                 <span class="lnr lnr-calendar-full"></span>
                                             </div>
                                         </div>
                                         <div class="col-6 col-md-12 col-lg-12">
-                                            <div class="info">
+                                            <div class="info-blog">
                                                 <span>1,2M Views</span>
                                                 <span class="lnr lnr-eye"></span>
                                             </div>
                                         </div>
                                         <div class="col-6 col-md-12 col-lg-12">
-                                            <div class="info">
+                                            <div class="info-blog">
                                                 <span>06 Comments</span>
                                                 <span class="lnr lnr-bubble"></span>
                                             </div>
@@ -211,16 +211,18 @@
                     </section>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4">
-                    <aside class="aside-blog-details">
-                        <form class="search-form">
-                            <input class="search-input" value="Search post" onclick="this.value=''" type="text" id="search"  name="search"/>
-                            <button class="search-btn">
-                                <span class="lnr lnr-magnifier"></span>
-                            </button>    
-                        </form> 
+                    <aside>
                         <section class="sec-blogger">
+                            <div>
+                                <form class="search-form">
+                                    <input class="search-input" value="Search post" onclick="this.value=''" type="text" id="search"  name="search"/>
+                                    <button class="search-btn">
+                                        <span class="lnr lnr-magnifier"></span>
+                                    </button>    
+                                </form> 
+                            </div>
                             <div class="blogger">
-                                <img src="img/blogger-charlie-barber.png" id="blogger-aside" alt="" title="">
+                                <img src="img/blogger-charlie-barber.png" id="blogger-aside" alt="charlie-barber" title="CHARLIE BARBER">
                                 <p class="blogger-name">charlie barber</p>
                                 <p class="p-style">Senior blog writer</p>
                                 <div class="blogger-social">
@@ -235,7 +237,7 @@
                             <div class="popular-posts">
                                 <h2 class="title-aside"><strong>popular posts</strong></h2>
                                 <div class="post">
-                                    <img src="img/post-popular-frontier.jpg" alt="" title="">
+                                    <img src="img/post-popular-frontier.jpg" alt="frontier" title="FRONTIER">
                                     <div class="post-info">
                                         <div class="info-box">
                                             <h3 class="title-3"><strong>space the final frontier</strong></h3>
@@ -244,7 +246,7 @@
                                     </div>
                                 </div>
                                 <div class="post">
-                                    <img src="img/post-popular-hubble.jpg" alt="" title="">
+                                    <img src="img/post-popular-hubble.jpg" alt="hubble" title="HUBBLE">
                                     <div class="post-info">
                                         <div class="info-box">
                                             <h3 class="title-3"><strong>the amazing hubble</strong></h3>
@@ -253,7 +255,7 @@
                                     </div>
                                 </div>
                                 <div class="post">
-                                    <img src="img/post-popular-astrology.jpg" alt="" title="">
+                                    <img src="img/post-popular-astrology.jpg" alt="strology" title="ASTROLOGY">
                                     <div class="post-info">
                                         <div class="info-box">
                                             <h3 class="title-3"><strong>astronomy or astrology</strong></h3>
@@ -262,7 +264,7 @@
                                     </div>
                                 </div>
                                 <div class="post">
-                                    <img src="img/post-popular-telescope.jpg" alt="" title="">
+                                    <img src="img/post-popular-telescope.jpg" alt="telescope" title="TELESCOPE">
                                     <div class="post-info">
                                         <div class="info-box">
                                             <h3 class="title-3"><strong>asteroids telescope</strong></h3>
@@ -289,14 +291,14 @@
                                 <p class="p-style">Here, I focus on a range of items and features that we use in life without giving them a second thought.</p>
                                 <form class="news-picker">
                                     <i class="far fa-envelope"></i>
-                                    <input value=" Enter your Email" onclick="this.value=''" type="text" id="emailpicker"  name="email"/>    
+                                    <input value=" Enter your Email" onclick="this.value=''" type="text" id="email"  name="email"/>    
                                     <button class="bnt-send" type="submit">
                                         subscribe
                                     </button>  
                                 </form> 
                                 <p class="p-style">You can unsubscribe at any time</p>
                             </div>
-                            <div class="tags-clouds">
+                            <div class="tags-clouds" id="last">
                                 <h2 class="title-aside"><strong>tag clouds</strong></h2>
                                 <a href="#">technology</a>
                                 <a href="#">fashion</a>

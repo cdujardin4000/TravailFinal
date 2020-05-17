@@ -13,27 +13,29 @@ h1{
     font-weight: bold;
     color: map-get($colors, title);  /*au cas ou le designer voudrait changer les couleurs*/
 }
-
+h4{
+    text-align: center;
+    margin: 3rem 0 2rem;
+    font-size: 1rem;
+}
 textarea, input, button{
     font-family: inherit;
     font-size: inherit;
     border-radius: 0;
 }
 
-h4{
-    text-align: center;
-    margin: 3rem 0 2rem;
-    font-size: 1rem;
-}
+
 p{
     color: map-get($colors, txt);
     margin: 3rem 1rem;
-    font-size: .8rem;
+    font-size: .9rem;
     line-height: 1.5rem;
-    letter-spacing: .1rem;
 }
 a{
     text-decoration: none;
+}
+article{
+    margin: 2rem 0 4rem;
 }
 img{
     width: 100%;
@@ -47,6 +49,6 @@ i{
 
 @media only screen and (min-width: map-get($breakpoints , lg)){
     p{
-        font-size: .9rem;
+        font-size: 1rem;
 }
 }

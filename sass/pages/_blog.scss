@@ -39,9 +39,12 @@
     color: map-get($colors, color3);
     text-align: center;
 }
+.blog-layout{
+    background: map-get($colors, bg);
+}
 /*THUMBS*/
 .sec-thumbs{
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 .thumbs-box{
     padding: 2rem 1rem;
@@ -83,21 +86,21 @@
 /*BLOG*/
 .sec-blog-page{
     margin: 1rem;
-    .info{
+    .info-blog{
         margin: 1rem 0;
         font-size: .8rem;
-        justify-content: start;
+        text-align: left;
         width: 100%;
         color: map-get($colors, txt);
         .lnr{
-            margin-left: .5rem;
-            
+            margin-left: 1rem;
+            font-size: .8rem;
             color: map-get($colors, title);
         }
     }
 
     img{
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
     .title-article{
         text-transform: capitalize;
@@ -118,12 +121,26 @@ p.tags-article{
     margin-left: 3rem;
     text-transform: capitalize;
 }
+@media only screen and (min-width: map-get($breakpoints , md)){
+    p.tags-article{
+        text-align: right;
+        margin-right: 1rem;
+    }
+    .sec-blog-page{
+        .info-blog{
+            text-align: right;
+            .lnr{
+                margin: 0 .5rem;
+            }
+        }
+    }
+}
 @media only screen and (min-width: map-get($breakpoints , lg)){
     .sec-blog-page{
-        .info{
+        .info-blog{
             font-size: 1rem;
             .lnr{
-                margin-left: 1rem;
+                margin: 0 1rem;
                 font-size: 1rem;
             }
         }
@@ -132,7 +149,7 @@ p.tags-article{
 /*PAGINATION*/
 
 .pagination{
-    margin-top: 3rem;
+    margin: 10rem 0;
     text-align: center;
     font-size: 1.5rem;
     .lnr{
@@ -155,14 +172,20 @@ p.tags-article{
 
 /*ASIDE*/
 aside{
+    border: 1px solid map-get($colors, color5);
     margin: 3rem 1rem 1rem 1rem;
     .blogger{
-        width: calc(100% - 2rem);
+        margin-left: 0;
+        width: 100%;
         display: block;
+        margin-top: 2rem;
+        p{
+            margin: 0;
+        }
     }
 }
 .search-form{
-    margin: 3rem 0 3rem 2rem;
+    margin: 3rem 0 2rem 2rem;
     width: calc(100% - 2rem);
     display: flex;
     justify-content: center;
@@ -193,6 +216,7 @@ aside{
         font-size: 1.5rem;
     }
 }
+
 #blogger-aside{
     width: 40%;
     margin: 0 30% 3rem;
@@ -212,7 +236,7 @@ aside{
     margin: 2rem 0;
     .fab{
         color: map-get($colors, title);
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         &:hover{
             color: map-get($colors, color1);
         }
@@ -227,14 +251,15 @@ aside{
     padding: 1rem 0;
     background: map-get($colors, color1);
     color: map-get($colors, color3);
-    margin: 4rem 0 3rem;
+    margin: 2rem 0 3rem;
 }
 
 /*POPULAR*/
 .post{
+    
     margin: 1rem 0;
     display: flex;
-    min-height: 6rem;
+    min-height: 5rem;
     img{
         
         max-height: 4rem;/*on donne une hauteur et largeur maximum pour eviter de trop deformer l'image*/
@@ -262,8 +287,8 @@ aside{
 }
 .add{
     width: 100%;
-    height: 10rem;
-    border: 1px solid map-get($colors, color5);
+    padding: 150px 0;
+    background: map-get($colors, color3);
     text-align: center;
 }
 .category{
@@ -279,6 +304,16 @@ aside{
 .post-categories{
     p{
         margin: 1rem 0;
+        &::after{
+            margin-top: 1rem;
+            display: block;
+            width: 100%;
+            height: .1rem;
+            background: map-get($colors, color5);
+            content: "";
+            position: relative;
+            margin-top: .5rem;
+        }
     }
 }
 .news-picker{
@@ -286,6 +321,7 @@ aside{
     width: 100%;
     
     i{
+        background: map-get($colors, color3);
         width: 15%;
         border: 1px solid map-get($colors, txt);
         border-right: none;
@@ -301,10 +337,13 @@ aside{
     }
     button{
         width: 25%;
+        font-size: .5rem;
     }
 }
 .tags-clouds{
+    padding-bottom: 3rem;
     a{
+        border: 1px solid map-get($colors, color5);
         color: map-get($colors, title);
         display: inline-block;
         padding: .5rem;
@@ -314,22 +353,28 @@ aside{
         &:hover{
             color: map-get($colors, color3);
             background: map-get($colors, color1);
-            -webkit-box-shadow: -2px -2px 5px 0px rgba(153,153,153,1);
-            -moz-box-shadow: -2px -2px 5px 0px rgba(153,153,153,1);
-            box-shadow: -2px -2px 5px 0px rgba(153,153,153,1);
         }
     }
 }
-
+.sec-blogger > div{
+    border-bottom: 2px solid map-get($colors, color5);
+    padding-bottom: 2rem;
+}
+#last{
+    border-bottom: none;
+}
 
 @media only screen and (min-width: map-get($breakpoints , md)){
+    aside{
+        
+    }
     .sec-ban-blog{
         margin-top: 4rem;
         background-size: cover;
         
     }
     .news-picker{
-        button{
+        button, input{
             font-size: 0.6rem;
             padding: 0;
         }

@@ -278,45 +278,48 @@ h1 {
   color: #222222;
   /*au cas ou le designer voudrait changer les couleurs*/ }
 
-/* line 17, ../sass/base/_base.scss */
-textarea, input, button {
-  font-family: inherit;
-  font-size: inherit;
-  border-radius: 0; }
-
-/* line 23, ../sass/base/_base.scss */
+/* line 16, ../sass/base/_base.scss */
 h4 {
   text-align: center;
   margin: 3rem 0 2rem;
   font-size: 1rem; }
 
+/* line 21, ../sass/base/_base.scss */
+textarea, input, button {
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 0; }
+
 /* line 28, ../sass/base/_base.scss */
 p {
   color: #777777;
   margin: 3rem 1rem;
-  font-size: .8rem;
-  line-height: 1.5rem;
-  letter-spacing: .1rem; }
+  font-size: .9rem;
+  line-height: 1.5rem; }
 
-/* line 35, ../sass/base/_base.scss */
+/* line 34, ../sass/base/_base.scss */
 a {
   text-decoration: none; }
 
-/* line 38, ../sass/base/_base.scss */
+/* line 37, ../sass/base/_base.scss */
+article {
+  margin: 2rem 0 4rem; }
+
+/* line 40, ../sass/base/_base.scss */
 img {
   width: 100%;
   height: auto; }
 
-/* line 42, ../sass/base/_base.scss */
+/* line 44, ../sass/base/_base.scss */
 i {
   cursor: pointer;
   padding-right: .5rem;
   color: #fff; }
 
 @media only screen and (min-width: 960px) {
-  /* line 49, ../sass/base/_base.scss */
+  /* line 51, ../sass/base/_base.scss */
   p {
-    font-size: .9rem; } }
+    font-size: 1rem; } }
 /* line 2, ../sass/layout/_layout.scss */
 .wrap {
   max-width: 1140px;
@@ -372,10 +375,10 @@ MENU
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin: 2rem 0 0 2rem; }
+  margin: 1rem 0 0 2rem; }
 /* line 56, ../sass/layout/_layout.scss */
 .l-main-menu li {
-  padding: 1.5rem 0; }
+  padding: 1rem 0; }
 /* line 59, ../sass/layout/_layout.scss */
 .l-main-menu a {
   position: relative;
@@ -1174,25 +1177,29 @@ footer a {
   color: #fff;
   text-align: center; }
 
-/*THUMBS*/
-/* line 43, ../sass/pages/_blog.scss */
-.sec-thumbs {
-  margin-top: 3rem; }
+/* line 42, ../sass/pages/_blog.scss */
+.blog-layout {
+  background: #faf9ff; }
 
+/*THUMBS*/
 /* line 46, ../sass/pages/_blog.scss */
+.sec-thumbs {
+  padding-top: 3rem; }
+
+/* line 49, ../sass/pages/_blog.scss */
 .thumbs-box {
   padding: 2rem 1rem; }
 
-/* line 49, ../sass/pages/_blog.scss */
+/* line 52, ../sass/pages/_blog.scss */
 .thumbs-opct {
   background: rgba(0, 0, 0, 0.788);
   height: 10rem; }
-/* line 52, ../sass/pages/_blog.scss */
+/* line 55, ../sass/pages/_blog.scss */
 .thumbs-opct p {
   color: #fff;
   margin: 2rem 0; }
 
-/* line 57, ../sass/pages/_blog.scss */
+/* line 60, ../sass/pages/_blog.scss */
 .thumbs-title {
   color: #fff;
   text-transform: uppercase;
@@ -1202,91 +1209,104 @@ footer a {
   text-align: center;
   font-size: 1.2rem; }
 
-/* line 66, ../sass/pages/_blog.scss */
+/* line 69, ../sass/pages/_blog.scss */
 .thumbs-bg-1, .thumbs-bg-2, .thumbs-bg-3 {
   min-height: 10rem;
   padding: 1rem; }
 
-/* line 70, ../sass/pages/_blog.scss */
+/* line 73, ../sass/pages/_blog.scss */
 .thumbs-bg-1 {
   background: url("../img/thumbs-party.jpg");
   background-size: cover;
   /*je me r├®p├¿te mais ne fonctionne pas si je le mets dans le selecteur des 3 thumbs*/ }
 
-/* line 74, ../sass/pages/_blog.scss */
+/* line 77, ../sass/pages/_blog.scss */
 .thumbs-bg-2 {
   background: url("../img/thumbs-co-worker.jpg");
   background-size: cover;
   /*je me r├®p├¿te mais ne fonctionne pas si je le mets dans le selecteur des 3 thumbs*/ }
 
-/* line 78, ../sass/pages/_blog.scss */
+/* line 81, ../sass/pages/_blog.scss */
 .thumbs-bg-3 {
   background: url("../img/thumbs-meat.jpg");
   background-size: cover;
   /*je me r├®p├¿te mais ne fonctionne pas si je le mets dans le selecteur des 3 thumbs*/ }
 
 /*BLOG*/
-/* line 84, ../sass/pages/_blog.scss */
+/* line 87, ../sass/pages/_blog.scss */
 .sec-blog-page {
   margin: 1rem; }
-/* line 86, ../sass/pages/_blog.scss */
-.sec-blog-page .info {
+/* line 89, ../sass/pages/_blog.scss */
+.sec-blog-page .info-blog {
   margin: 1rem 0;
   font-size: .8rem;
-  justify-content: start;
+  text-align: left;
   width: 100%;
   color: #777777; }
-/* line 92, ../sass/pages/_blog.scss */
-.sec-blog-page .info .lnr {
-  margin-left: .5rem;
+/* line 95, ../sass/pages/_blog.scss */
+.sec-blog-page .info-blog .lnr {
+  margin-left: 1rem;
+  font-size: .8rem;
   color: #222222; }
-/* line 99, ../sass/pages/_blog.scss */
-.sec-blog-page img {
-  margin: 2rem 0; }
 /* line 102, ../sass/pages/_blog.scss */
+.sec-blog-page img {
+  margin: 1rem 0; }
+/* line 105, ../sass/pages/_blog.scss */
 .sec-blog-page .title-article {
   text-transform: capitalize;
   margin-left: 0; }
-/* line 106, ../sass/pages/_blog.scss */
+/* line 109, ../sass/pages/_blog.scss */
 .sec-blog-page p {
   margin-left: 0; }
 
-/* line 110, ../sass/pages/_blog.scss */
+/* line 113, ../sass/pages/_blog.scss */
 p.tags-article {
   text-transform: capitalize;
   margin: 2rem 0;
   color: #222222; }
 
-/* line 116, ../sass/pages/_blog.scss */
+/* line 119, ../sass/pages/_blog.scss */
 .bnt-article {
   color: #222222;
   margin-left: 3rem;
   text-transform: capitalize; }
 
-@media only screen and (min-width: 960px) {
-  /* line 123, ../sass/pages/_blog.scss */
-  .sec-blog-page .info {
-    font-size: 1rem; }
+@media only screen and (min-width: 720px) {
   /* line 125, ../sass/pages/_blog.scss */
-  .sec-blog-page .info .lnr {
-    margin-left: 1rem;
+  p.tags-article {
+    text-align: right;
+    margin-right: 1rem; }
+
+  /* line 130, ../sass/pages/_blog.scss */
+  .sec-blog-page .info-blog {
+    text-align: right; }
+  /* line 132, ../sass/pages/_blog.scss */
+  .sec-blog-page .info-blog .lnr {
+    margin: 0 .5rem; } }
+@media only screen and (min-width: 960px) {
+  /* line 140, ../sass/pages/_blog.scss */
+  .sec-blog-page .info-blog {
+    font-size: 1rem; }
+  /* line 142, ../sass/pages/_blog.scss */
+  .sec-blog-page .info-blog .lnr {
+    margin: 0 1rem;
     font-size: 1rem; } }
 /*PAGINATION*/
-/* line 134, ../sass/pages/_blog.scss */
+/* line 151, ../sass/pages/_blog.scss */
 .pagination {
-  margin-top: 3rem;
+  margin: 10rem 0;
   text-align: center;
   font-size: 1.5rem; }
-/* line 138, ../sass/pages/_blog.scss */
+/* line 155, ../sass/pages/_blog.scss */
 .pagination .lnr {
   font-size: 1rem; }
-/* line 141, ../sass/pages/_blog.scss */
+/* line 158, ../sass/pages/_blog.scss */
 .pagination li {
   font-size: 1rem;
   display: inline-block;
   padding: .5rem;
   cursor: pointer; }
-/* line 146, ../sass/pages/_blog.scss */
+/* line 163, ../sass/pages/_blog.scss */
 .pagination li:hover, .pagination li.is-active {
   background-color: #8490ff;
   color: #fff;
@@ -1295,22 +1315,28 @@ p.tags-article {
   box-shadow: 2px 2px 10px 0px #999999; }
 
 /*ASIDE*/
-/* line 157, ../sass/pages/_blog.scss */
+/* line 174, ../sass/pages/_blog.scss */
 aside {
+  border: 1px solid #dadada;
   margin: 3rem 1rem 1rem 1rem; }
-/* line 159, ../sass/pages/_blog.scss */
+/* line 177, ../sass/pages/_blog.scss */
 aside .blogger {
-  width: calc(100% - 2rem);
-  display: block; }
+  margin-left: 0;
+  width: 100%;
+  display: block;
+  margin-top: 2rem; }
+/* line 182, ../sass/pages/_blog.scss */
+aside .blogger p {
+  margin: 0; }
 
-/* line 164, ../sass/pages/_blog.scss */
+/* line 187, ../sass/pages/_blog.scss */
 .search-form {
-  margin: 3rem 0 3rem 2rem;
+  margin: 3rem 0 2rem 2rem;
   width: calc(100% - 2rem);
   display: flex;
   justify-content: center; }
 
-/* line 170, ../sass/pages/_blog.scss */
+/* line 193, ../sass/pages/_blog.scss */
 .search-input {
   height: 3rem;
   width: calc(100% - 4rem);
@@ -1321,7 +1347,7 @@ aside .blogger {
   position: relative;
   padding-left: 2rem; }
 
-/* line 180, ../sass/pages/_blog.scss */
+/* line 203, ../sass/pages/_blog.scss */
 .search-btn {
   cursor: pointer;
   position: relative;
@@ -1331,19 +1357,19 @@ aside .blogger {
   color: #fff;
   transform: perspective(100px) translateZ(0px);
   transition: transform 100ms linear; }
-/* line 189, ../sass/pages/_blog.scss */
+/* line 212, ../sass/pages/_blog.scss */
 .search-btn:hover {
   transform: perspective(100px) translateZ(10px); }
-/* line 192, ../sass/pages/_blog.scss */
+/* line 215, ../sass/pages/_blog.scss */
 .search-btn span {
   font-size: 1.5rem; }
 
-/* line 196, ../sass/pages/_blog.scss */
+/* line 220, ../sass/pages/_blog.scss */
 #blogger-aside {
   width: 40%;
   margin: 0 30% 3rem; }
 
-/* line 200, ../sass/pages/_blog.scss */
+/* line 224, ../sass/pages/_blog.scss */
 .blogger-name {
   text-transform: capitalize;
   text-align: center;
@@ -1351,23 +1377,23 @@ aside .blogger {
   color: #222222;
   font-weight: bold; }
 
-/* line 207, ../sass/pages/_blog.scss */
+/* line 231, ../sass/pages/_blog.scss */
 .sec-blogger {
   padding: 0 2rem; }
 
-/* line 210, ../sass/pages/_blog.scss */
+/* line 234, ../sass/pages/_blog.scss */
 .blogger-social {
   text-align: center;
   margin: 2rem 0; }
-/* line 213, ../sass/pages/_blog.scss */
+/* line 237, ../sass/pages/_blog.scss */
 .blogger-social .fab {
   color: #222222;
-  font-size: 1.2rem; }
-/* line 216, ../sass/pages/_blog.scss */
+  font-size: 1.1rem; }
+/* line 240, ../sass/pages/_blog.scss */
 .blogger-social .fab:hover {
   color: #8490ff; }
 
-/* line 222, ../sass/pages/_blog.scss */
+/* line 246, ../sass/pages/_blog.scss */
 .title-aside {
   text-transform: capitalize;
   text-align: center;
@@ -1376,68 +1402,79 @@ aside .blogger {
   padding: 1rem 0;
   background: #8490ff;
   color: #fff;
-  margin: 4rem 0 3rem; }
+  margin: 2rem 0 3rem; }
 
 /*POPULAR*/
-/* line 234, ../sass/pages/_blog.scss */
+/* line 258, ../sass/pages/_blog.scss */
 .post {
   margin: 1rem 0;
   display: flex;
-  min-height: 6rem; }
-/* line 238, ../sass/pages/_blog.scss */
+  min-height: 5rem; }
+/* line 263, ../sass/pages/_blog.scss */
 .post img {
   max-height: 4rem;
   /*on donne une hauteur et largeur maximum pour eviter de trop deformer l'image*/
   max-width: 8rem;
   margin: auto 0; }
-/* line 244, ../sass/pages/_blog.scss */
+/* line 269, ../sass/pages/_blog.scss */
 .post .title-3 {
   font-size: .8rem;
   margin: 0 0 0 1rem; }
 
-/* line 250, ../sass/pages/_blog.scss */
+/* line 275, ../sass/pages/_blog.scss */
 .info-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%; }
 
-/* line 256, ../sass/pages/_blog.scss */
+/* line 281, ../sass/pages/_blog.scss */
 .post-info {
   text-align: center; }
-/* line 258, ../sass/pages/_blog.scss */
+/* line 283, ../sass/pages/_blog.scss */
 .post-info p {
   margin: 0 0 0 1rem;
   text-align: left; }
 
-/* line 263, ../sass/pages/_blog.scss */
+/* line 288, ../sass/pages/_blog.scss */
 .add {
   width: 100%;
-  height: 10rem;
-  border: 1px solid #dadada;
+  padding: 150px 0;
+  background: #fff;
   text-align: center; }
 
-/* line 269, ../sass/pages/_blog.scss */
+/* line 294, ../sass/pages/_blog.scss */
 .category {
   width: calc(100% - 1.5rem);
   display: inline-block; }
-/* line 272, ../sass/pages/_blog.scss */
+/* line 297, ../sass/pages/_blog.scss */
 .category a {
   color: #777777; }
-/* line 274, ../sass/pages/_blog.scss */
+/* line 299, ../sass/pages/_blog.scss */
 .category a:hover {
   color: #8490ff; }
 
-/* line 280, ../sass/pages/_blog.scss */
+/* line 305, ../sass/pages/_blog.scss */
 .post-categories p {
   margin: 1rem 0; }
+/* line 307, ../sass/pages/_blog.scss */
+.post-categories p::after {
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  height: .1rem;
+  background: #dadada;
+  content: "";
+  position: relative;
+  margin-top: .5rem; }
 
-/* line 284, ../sass/pages/_blog.scss */
+/* line 319, ../sass/pages/_blog.scss */
 .news-picker {
   padding: 0;
   width: 100%; }
-/* line 288, ../sass/pages/_blog.scss */
+/* line 323, ../sass/pages/_blog.scss */
 .news-picker i {
+  background: #fff;
   width: 15%;
   border: 1px solid #777777;
   border-right: none;
@@ -1445,39 +1482,50 @@ aside .blogger {
   padding: 0 0 0 .2rem;
   font-size: 1.5rem;
   padding-top: .2rem; }
-/* line 297, ../sass/pages/_blog.scss */
+/* line 333, ../sass/pages/_blog.scss */
 .news-picker input {
   width: 60%;
   border-top: 1px solid #777777;
   border-bottom: 1px solid #777777; }
-/* line 302, ../sass/pages/_blog.scss */
+/* line 338, ../sass/pages/_blog.scss */
 .news-picker button {
-  width: 25%; }
+  width: 25%;
+  font-size: .5rem; }
 
-/* line 307, ../sass/pages/_blog.scss */
+/* line 343, ../sass/pages/_blog.scss */
+.tags-clouds {
+  padding-bottom: 3rem; }
+/* line 345, ../sass/pages/_blog.scss */
 .tags-clouds a {
+  border: 1px solid #dadada;
   color: #222222;
   display: inline-block;
   padding: .5rem;
   line-height: 2rem;
   cursor: pointer;
   margin-top: .5rem; }
-/* line 314, ../sass/pages/_blog.scss */
+/* line 353, ../sass/pages/_blog.scss */
 .tags-clouds a:hover {
   color: #fff;
-  background: #8490ff;
-  -webkit-box-shadow: -2px -2px 5px 0px #999999;
-  -moz-box-shadow: -2px -2px 5px 0px #999999;
-  box-shadow: -2px -2px 5px 0px #999999; }
+  background: #8490ff; }
+
+/* line 359, ../sass/pages/_blog.scss */
+.sec-blogger > div {
+  border-bottom: 2px solid #dadada;
+  padding-bottom: 2rem; }
+
+/* line 363, ../sass/pages/_blog.scss */
+#last {
+  border-bottom: none; }
 
 @media only screen and (min-width: 720px) {
-  /* line 326, ../sass/pages/_blog.scss */
+  /* line 371, ../sass/pages/_blog.scss */
   .sec-ban-blog {
     margin-top: 4rem;
     background-size: cover; }
 
-  /* line 332, ../sass/pages/_blog.scss */
-  .news-picker button {
+  /* line 377, ../sass/pages/_blog.scss */
+  .news-picker button, .news-picker input {
     font-size: 0.6rem;
     padding: 0; } }
 /* line 1, ../sass/pages/_contact.scss */
@@ -1627,154 +1675,175 @@ aside .blogger {
 #socialDetails {
   text-align: left; }
 
-/* line 12, ../sass/pages/_article.scss */
+/* line 13, ../sass/pages/_article.scss */
 .p-special {
   text-align: left;
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  background: #fff; }
 
-/* line 16, ../sass/pages/_article.scss */
+/* line 18, ../sass/pages/_article.scss */
 .gallery-article {
   display: flex;
   justify-content: space-between; }
-/* line 19, ../sass/pages/_article.scss */
+/* line 21, ../sass/pages/_article.scss */
 .gallery-article img {
   width: calc(50% - 1rem); }
 
-/* line 24, ../sass/pages/_article.scss */
+/* line 26, ../sass/pages/_article.scss */
 .nav-article p {
   font-size: 1rem; }
-/* line 27, ../sass/pages/_article.scss */
+/* line 29, ../sass/pages/_article.scss */
 .nav-article h2 {
   font-size: 1.2rem;
   color: #222222; }
-/* line 31, ../sass/pages/_article.scss */
+/* line 33, ../sass/pages/_article.scss */
 .nav-article p, .nav-article h2 {
   margin: 0; }
-/* line 34, ../sass/pages/_article.scss */
+/* line 36, ../sass/pages/_article.scss */
 .nav-article a {
   cursor: pointer; }
-/* line 37, ../sass/pages/_article.scss */
+/* line 39, ../sass/pages/_article.scss */
 .nav-article ul {
   display: flex;
   flex-direction: column; }
-/* line 41, ../sass/pages/_article.scss */
+/* line 43, ../sass/pages/_article.scss */
 .nav-article li {
   width: calc(100% - 2rem);
   display: flex;
   padding: 0 1rem;
   margin: 2rem 0; }
-/* line 47, ../sass/pages/_article.scss */
+/* line 49, ../sass/pages/_article.scss */
 .nav-article img {
   width: 20%;
   margin: 0;
   cursor: pointer;
   margin-right: 2rem; }
-/* line 53, ../sass/pages/_article.scss */
+/* line 55, ../sass/pages/_article.scss */
 .nav-article .title-nav {
   font-size: 1.2rem;
   text-transform: capitalize; }
-/* line 57, ../sass/pages/_article.scss */
+/* line 59, ../sass/pages/_article.scss */
 .nav-article .prev-post, .nav-article .next-post {
   width: 100%;
   display: flex; }
-/* line 61, ../sass/pages/_article.scss */
+/* line 63, ../sass/pages/_article.scss */
 .nav-article .prev-post-info {
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-/* line 68, ../sass/pages/_article.scss */
+/* line 70, ../sass/pages/_article.scss */
 .nav-article .next-post p, .nav-article .next-post h2 {
   text-align: right; }
-/* line 71, ../sass/pages/_article.scss */
+/* line 73, ../sass/pages/_article.scss */
 .nav-article .next-post img {
   margin: 0 0 0 2rem; }
 
 @media only screen and (min-width: 720px) {
-  /* line 78, ../sass/pages/_article.scss */
+  /* line 79, ../sass/pages/_article.scss */
+  #socialDetails {
+    text-align: right;
+    margin-right: 1rem; }
+
+  /* line 84, ../sass/pages/_article.scss */
+  .sec-blog-page p {
+    margin-right: 1rem; }
+
+  /* line 89, ../sass/pages/_article.scss */
   .nav-article ul {
     flex-direction: row;
     margin-top: 4rem; }
-  /* line 82, ../sass/pages/_article.scss */
+  /* line 93, ../sass/pages/_article.scss */
   .nav-article li {
     width: calc(50% - 2rem); } }
-/* line 87, ../sass/pages/_article.scss */
+/* line 98, ../sass/pages/_article.scss */
+.sec-comment, .sec-new-comment {
+  border: 1px solid #dadada;
+  margin: 2rem 1rem; }
+
+/* line 102, ../sass/pages/_article.scss */
 .sec-comment {
   padding: 0 1rem; }
-/* line 89, ../sass/pages/_article.scss */
+/* line 104, ../sass/pages/_article.scss */
 .sec-comment p {
   margin: 1rem 0; }
-/* line 92, ../sass/pages/_article.scss */
+/* line 107, ../sass/pages/_article.scss */
 .sec-comment .comment-box, .sec-comment .re-comment-box {
   margin: 1rem 0;
   max-width: 100%;
   display: flex; }
-/* line 97, ../sass/pages/_article.scss */
+/* line 112, ../sass/pages/_article.scss */
 .sec-comment img, .sec-comment .black-sheep {
-  width: 20%;
-  max-width: 3rem;
+  width: 40%;
+  max-width: 4rem;
   margin: 1rem 1rem 0 0;
-  max-height: 3rem; }
-/* line 103, ../sass/pages/_article.scss */
+  max-height: 4rem; }
+/* line 118, ../sass/pages/_article.scss */
 .sec-comment .comment-boxing {
-  width: 50%;
-  margin-right: 5rem; }
-/* line 107, ../sass/pages/_article.scss */
+  width: 80%;
+  margin-right: 1rem; }
+/* line 122, ../sass/pages/_article.scss */
 .sec-comment .re-comment-box {
   margin-left: 2rem; }
-/* line 110, ../sass/pages/_article.scss */
+/* line 124, ../sass/pages/_article.scss */
+.sec-comment .re-comment-box .comment-boxing {
+  margin-right: 0; }
+/* line 128, ../sass/pages/_article.scss */
 .sec-comment a {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-transform: uppercase;
   color: #222222;
-  font-size: 1rem; }
-/* line 116, ../sass/pages/_article.scss */
+  font-size: 1rem;
+  border: 1px solid #dadada;
+  padding: .5rem 1rem;
+  align-self: baseline; }
+/* line 137, ../sass/pages/_article.scss */
 .sec-comment .commenter-name {
   text-transform: capitalize;
   color: #222222;
   font-size: 1rem; }
-/* line 121, ../sass/pages/_article.scss */
+/* line 142, ../sass/pages/_article.scss */
 .sec-comment .comment {
   margin-top: 2rem; }
-/* line 124, ../sass/pages/_article.scss */
+/* line 145, ../sass/pages/_article.scss */
 .sec-comment time {
   color: #ada9a9; }
 
-/* line 129, ../sass/pages/_article.scss */
+/* line 150, ../sass/pages/_article.scss */
 .sec-new-comment {
   padding-bottom: 4rem; }
-/* line 131, ../sass/pages/_article.scss */
+/* line 152, ../sass/pages/_article.scss */
 .sec-new-comment form {
   max-width: 100%; }
-/* line 134, ../sass/pages/_article.scss */
+/* line 155, ../sass/pages/_article.scss */
 .sec-new-comment input, .sec-new-comment textarea {
   margin: 1rem;
   border: 2px solid transparent;
   /*on donne une taille de 2 px transparent a la bordure pour ne pas avoir de 
    avoir de d├®placement d'├®l├®ments qd les bordures deviennent vivibles*/
   color: #777777; }
-/* line 139, ../sass/pages/_article.scss */
+/* line 160, ../sass/pages/_article.scss */
 .sec-new-comment input:hover, .sec-new-comment textarea:hover {
   border-image-source: linear-gradient(to left, #8490ff, #62bdfc);
   border-width: 2px;
   border-image-slice: 1; }
-/* line 144, ../sass/pages/_article.scss */
+/* line 165, ../sass/pages/_article.scss */
 .sec-new-comment input:focus, .sec-new-comment textarea:focus {
   border-image-source: linear-gradient(to right, #8490ff, #62bdfc);
   border-width: 2px;
   border-image-slice: 1; }
-/* line 150, ../sass/pages/_article.scss */
+/* line 171, ../sass/pages/_article.scss */
 .sec-new-comment input {
   height: 3rem;
   padding-left: 1rem;
   width: calc(100% - 3.5rem); }
-/* line 155, ../sass/pages/_article.scss */
+/* line 176, ../sass/pages/_article.scss */
 .sec-new-comment textarea {
   height: 6rem;
   padding: 1rem;
   width: calc(100% - 4.5rem);
   margin-bottom: 4rem; }
-/* line 161, ../sass/pages/_article.scss */
+/* line 182, ../sass/pages/_article.scss */
 .sec-new-comment .btn-1 {
   position: relative;
   left: calc(50% - 96px);
