@@ -33,11 +33,11 @@ MENU
 
 .l-main-menu-content{
     width: 70vw;
-    height: 100vh;
+    height: 110vh;/*parfois le menu se positionne trop haut et il y a un blanc en dessous*/
     background-color: map-get($colors, color4);
 }
 .l-main-menu{
-    height: 100vh;
+    height: 110vh;/*parfois le menu se positionne trop haut et il y a un blanc en dessous*/
     background-color: map-get($colors, color4-op);
     width: 100%;
     text-align: left;
@@ -54,7 +54,7 @@ MENU
         
     }
     li{
-        padding: 1rem 0;
+        padding: .5rem 0;
     }    
     a{
         position: relative;
@@ -257,6 +257,48 @@ BACK TO TOP BUTTON
         color: map-get($colors, color1);
     }
     
+}
+/*
+BANIERE BLEUE
+*/
+.sec-banner{
+    margin-top: 4rem;
+    background: linear-gradient(to right, map-get($colors, color1), map-get($colors, color2));
+    padding: 4rem 0;
+    .banner-title{
+        color: map-get($colors, color3);
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 2rem;
+
+    }
+    li{
+        font-size: 1rem;
+        color: map-get($colors, color3);
+        display: inline-block;
+        text-transform: capitalize;
+
+        &:after{
+            display: inline-block;
+            content:"\f35a";
+            font-family: "Font Awesome 5 Free";
+            padding: 0 1rem 0 .5rem;
+        }
+        &:last-child{
+            &:after{
+                content: "";
+            }
+        }
+        a{
+            color: map-get($colors, color3);
+            &:hover{
+                color: map-get($colors, color5);
+            }
+        }
+    }
+    nav{
+        text-align: center;
+    }
 }
 /*
 FOOTER

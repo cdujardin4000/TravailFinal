@@ -12,7 +12,7 @@
 }
 .p-special{
     text-align: left;
-    padding-left: 2rem;
+    padding: 1rem;
     background: map-get($colors, color3);
 }
 .gallery-article{
@@ -109,7 +109,7 @@
         max-width: 100%;
         display: flex;
     }
-    img, .black-sheep{
+    img{
         width: 40%;
         max-width: 4rem;
         margin: 1rem 1rem 0 0;
@@ -126,13 +126,18 @@
         }
     }
     a{
+        background: map-get($colors, color3);
         margin-top: 1rem;
         text-transform: uppercase;
         color: map-get($colors, title);
         font-size: 1rem;
         border: 1px solid map-get($colors, color5);
         padding: .5rem 1rem;
-        align-self: baseline
+        align-self: baseline;
+        &:hover{
+            background: map-get($colors, color1);
+            color: map-get($colors, color3);
+        }
     }
     .commenter-name{
         text-transform: capitalize;
