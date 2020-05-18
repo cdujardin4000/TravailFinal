@@ -289,6 +289,9 @@ BANIERE BLEUE
                 content: "";
             }
         }
+        &.active{
+            color: map-get($colors, color5);
+        }
         a{
             color: map-get($colors, color3);
             &:hover{

@@ -587,56 +587,59 @@ BANIERE BLEUE
 .sec-banner li:last-child:after {
   content: ""; }
 /* line 292, ../sass/layout/_layout.scss */
+.sec-banner li.active {
+  color: #dadada; }
+/* line 295, ../sass/layout/_layout.scss */
 .sec-banner li a {
   color: #fff; }
-/* line 294, ../sass/layout/_layout.scss */
+/* line 297, ../sass/layout/_layout.scss */
 .sec-banner li a:hover {
   color: #dadada; }
-/* line 299, ../sass/layout/_layout.scss */
+/* line 302, ../sass/layout/_layout.scss */
 .sec-banner nav {
   text-align: center; }
 
 /*
 FOOTER
 */
-/* line 306, ../sass/layout/_layout.scss */
+/* line 309, ../sass/layout/_layout.scss */
 footer {
   padding-bottom: 1rem;
   background-color: #05071c; }
-/* line 309, ../sass/layout/_layout.scss */
+/* line 312, ../sass/layout/_layout.scss */
 footer strong {
   color: #8490ff; }
-/* line 312, ../sass/layout/_layout.scss */
+/* line 315, ../sass/layout/_layout.scss */
 footer p {
   margin-top: 1rem;
   margin-bottom: 1rem; }
-/* line 316, ../sass/layout/_layout.scss */
+/* line 319, ../sass/layout/_layout.scss */
 footer a {
   color: #8490ff; }
 
-/* line 321, ../sass/layout/_layout.scss */
+/* line 324, ../sass/layout/_layout.scss */
 .footer-title {
   color: #fff;
   font-size: 1rem;
   margin: 2rem 0 0 1rem;
   text-transform: capitalize; }
 
-/* line 328, ../sass/layout/_layout.scss */
+/* line 331, ../sass/layout/_layout.scss */
 .p-copyright {
   margin-top: 1rem; }
 
-/* line 333, ../sass/layout/_layout.scss */
+/* line 336, ../sass/layout/_layout.scss */
 .mail-picker, .news-picker {
   width: calc(100% - 2rem);
   display: flex;
   height: 2rem;
   padding: 0 1rem; }
-/* line 338, ../sass/layout/_layout.scss */
+/* line 341, ../sass/layout/_layout.scss */
 .mail-picker input, .news-picker input {
   width: 80%;
   border: 1px solid #fff;
   padding-left: 1rem; }
-/* line 344, ../sass/layout/_layout.scss */
+/* line 347, ../sass/layout/_layout.scss */
 .mail-picker button, .news-picker button {
   /*on donne une perspective ├á l'├®l├®ment sur l'axe z*/
   transform: perspective(100px) translateZ(0px);
@@ -646,36 +649,36 @@ footer a {
   width: 20%;
   cursor: pointer;
   border: none; }
-/* line 353, ../sass/layout/_layout.scss */
+/* line 356, ../sass/layout/_layout.scss */
 .mail-picker button:hover, .news-picker button:hover {
   /*on (agrandi) l'├®l├®ment clickable en le rapprochant de l'utilisateur de 5px*/
   transform: perspective(100px) translateZ(5px); }
-/* line 357, ../sass/layout/_layout.scss */
+/* line 360, ../sass/layout/_layout.scss */
 .mail-picker button span, .news-picker button span {
   font-size: 1.5rem; }
 
-/* line 362, ../sass/layout/_layout.scss */
+/* line 365, ../sass/layout/_layout.scss */
 .social-footer {
   font-size: 1rem;
   margin: 1rem; }
 
-/* line 367, ../sass/layout/_layout.scss */
+/* line 370, ../sass/layout/_layout.scss */
 .fab:hover {
   transform: perspective(50px) translateZ(10px);
   color: #8490ff;
   transition: transform 200ms linear; }
 
 @media only screen and (min-width: 720px) {
-  /* line 373, ../sass/layout/_layout.scss */
+  /* line 376, ../sass/layout/_layout.scss */
   footer {
     padding: 2rem 0 3rem; }
 
-  /* line 376, ../sass/layout/_layout.scss */
+  /* line 379, ../sass/layout/_layout.scss */
   .social-footer {
     margin: 1rem 0 0 1rem;
     font-size: .9rem; } }
 @media only screen and (min-width: 960px) {
-  /* line 382, ../sass/layout/_layout.scss */
+  /* line 385, ../sass/layout/_layout.scss */
   .social-footer {
     margin: 1rem 0 0 1rem;
     font-size: 1.2rem; } }
