@@ -16,6 +16,7 @@
 .techno{
     text-align: right;
     margin-right: 1rem;
+    font-weight: bolder;
 }
 /*PROGRESS BAR*/
 .progress-bar{
@@ -68,6 +69,7 @@
     p{
         margin-top: 1rem;
     }
+
 }
 
 .testimonial-2{
@@ -79,6 +81,9 @@
     font-weight: bold;
     font-size: 1.4rem;
     color: map-get($colors, title);
+    & ~ p{
+        font-weight: bold;
+    }
 }
 .testimonial-img{
     width: 15%;

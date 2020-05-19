@@ -112,7 +112,7 @@ MENU
         
     }
     .l-main-menu{
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0;
         transform: translateX(0%);
         width: 100vw;
@@ -277,12 +277,13 @@ BANIERE BLEUE
         color: map-get($colors, color3);
         display: inline-block;
         text-transform: capitalize;
-
+        font-weight: bolder;
         &:after{
             display: inline-block;
-            content:"\f35a";
+            content:"\f054";
             font-family: "Font Awesome 5 Free";
-            padding: 0 1rem 0 .5rem;
+            padding: 0 1rem ;
+            font-size: 1.2rem;
         }
         &:last-child{
             &:after{
@@ -323,7 +324,7 @@ footer{
 
 .footer-title{
     color: map-get($colors, color3);
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 2rem 0 0 1rem;
     text-transform: capitalize;
 }
@@ -336,12 +337,13 @@ footer{
 .mail-picker, .news-picker{
     width: calc(100% - 2rem);
     display: flex;
-    height: 2rem;
+    height: 2.5rem;
     padding: 0 1rem;
     input{
         width: 80%;
         border: 1px solid map-get($colors, color3);
-        padding-left: 1rem;
+        padding-left: .9rem;
+        font-size: 1rem;
     }
     
     button{

@@ -10,6 +10,7 @@
     text-align: left;
 
 }
+
 .p-special{
     text-align: left;
     padding: 1rem;
@@ -79,12 +80,17 @@
     #socialDetails{
         text-align: right;
         margin-right: 1rem;
+        .fab{
+            font-size: .9rem;
+            padding-right: .4rem;
+        }
     }
     .sec-blog-page{
         p{
             margin-right: 1rem;
         }
     }
+
     .nav-article{
         ul{
             flex-direction: row;
@@ -120,7 +126,7 @@
         margin-right: 1rem;
     }
     .re-comment-box{
-        margin-left: 2rem;
+        margin-left: 1.2rem;
         .comment-boxing{
             margin-right: 0;
         }
@@ -134,6 +140,7 @@
         border: 1px solid map-get($colors, color5);
         padding: .5rem 1rem;
         align-self: baseline;
+        font-weight: bold;
         &:hover{
             background: map-get($colors, color1);
             color: map-get($colors, color3);
@@ -190,5 +197,15 @@
         margin: 2rem 0;
         background: map-get($colors, color1);
         border: none;
+    }
+}
+@media only screen and (min-width: map-get($breakpoints , lg)){
+    #socialDetails{
+        .fab{
+            font-size: 1.1rem;
+        }
+    }
+    #tags-art{
+        margin-bottom: 2rem;
     }
 }
