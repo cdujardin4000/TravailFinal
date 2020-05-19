@@ -303,10 +303,10 @@
         transition: all  .4s ease-in;
         
         img{
-            left: calc(50% - 2rem);/*50% - la moitie de la largeur et de la hauteur de l'élément*/
-            top: calc(50% - 2rem);
-            height: 4rem;
-            width: 4rem;
+            left: calc(50% - 1.5rem);/*50% - la moitie de la largeur et de la hauteur de l'élément*/
+            top: calc(50% - 1.5rem);
+            height: 3rem;
+            width: 3rem;
             display: none;
             position: relative;
 
