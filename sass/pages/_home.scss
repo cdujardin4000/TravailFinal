@@ -237,9 +237,7 @@
     /*on descend le contenu pour laisser la place au menu*/
     .pres-1{
         padding-top: 8rem;
-        .hello{
-            margin-top: 6rem;
-        }
+
         img{
             margin-left: 4rem;
         }
@@ -269,10 +267,13 @@
 
 }
 /*adaptation des tailles des elements blogger et info qui sont devenus trop petits*/
-@media only screen and (min-width: 1000px){
 
-}
 @media only screen and (min-width: map-get($breakpoints , lg)){ 
+    .pres-1{
+        .hello{
+            margin-top: 6rem;
+        }
+    }
     .info{
         font-size: .9rem;
         .lnr{

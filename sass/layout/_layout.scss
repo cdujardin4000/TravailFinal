@@ -36,6 +36,12 @@ MENU
     height: 110vh;/*parfois le menu se positionne trop haut et il y a un blanc en dessous*/
     background-color: map-get($colors, color4);
 }
+#nofx{
+    &:after{
+        height: 0;
+        width: 0;
+    }
+}
 .l-main-menu{
     height: 110vh;/*parfois le menu se positionne trop haut et il y a un blanc en dessous*/
     background-color: map-get($colors, color4-op);
@@ -107,7 +113,7 @@ MENU
         border-bottom: 1px solid map-get($colors, txt);
     }
     .l-main-menu, .l-main-menu-content{
-        height: 4rem;
+        height: 5rem;
         background: map-get($colors, color3);
         
     }
@@ -129,7 +135,7 @@ MENU
             padding-right: 2rem;
         }
         li{
-            padding: 1rem 0 1rem 1rem;
+            padding: 1.5rem 0 1rem 1rem;
         }
     }
     .l-main-menu-content{
