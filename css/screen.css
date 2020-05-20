@@ -907,7 +907,7 @@ footer a {
   display: none; }
 
 @media only screen and (min-width: 720px) {
-  /*on rend les elements cach├®s visibles on passe en flex pour les aligner horizontalement. 
+  /*on rend les elements cach├®s visibles on passe en flex pour les aligner horizontalement.
   on donne une taille de 15% afin de leur laisser de place pour les marges*/
   /* line 211, ../sass/pages/_home.scss */
   .label {
@@ -922,7 +922,7 @@ footer a {
     width: 15%;
     margin: 0; }
 
-  /*on diminue le padding qu'on avait mis en smartphone afin d'avoir des images de meme taille. 
+  /*on diminue le padding qu'on avait mis en smartphone afin d'avoir des images de meme taille.
   cela augmente la taille de la photo du dessus. on ajoute du margin pour obtenir le r├®sultat d├®sir├®*/
   /* line 224, ../sass/pages/_home.scss */
   .img-box {
@@ -950,7 +950,7 @@ footer a {
   .p-pres {
     margin-bottom: 6rem; }
 
-  /*adaptation des tailles des elements blogger et info qui n'ont plus assez de place au debut 
+  /*adaptation des tailles des elements blogger et info qui n'ont plus assez de place au debut
   du breakpoint. ├á r├®adapter qd l'espace le permet*/
   /* line 250, ../sass/pages/_home.scss */
   .info {

@@ -80,7 +80,7 @@
         font-size: 1.2rem;
         margin-top: 3rem;
     }
-    
+
 }
 .lnr{
     font-size: 3rem;
@@ -104,7 +104,7 @@
 .counter-item{
     font-size: 1.2rem;
     margin-top: -2.5rem;
-    
+
 }
 
 /*GALLERIE*/
@@ -206,7 +206,7 @@
 }
 
 @media only screen and (min-width: map-get($breakpoints , md)){
-    /*on rend les elements cachés visibles on passe en flex pour les aligner horizontalement. 
+    /*on rend les elements cachés visibles on passe en flex pour les aligner horizontalement.
     on donne une taille de 15% afin de leur laisser de place pour les marges*/
     .label{
         display: inline-block;
@@ -219,7 +219,7 @@
             margin: 0;
         }
     }
-    /*on diminue le padding qu'on avait mis en smartphone afin d'avoir des images de meme taille. 
+    /*on diminue le padding qu'on avait mis en smartphone afin d'avoir des images de meme taille.
     cela augmente la taille de la photo du dessus. on ajoute du margin pour obtenir le résultat désiré*/
     .img-box{
         padding: 1rem 1rem 0;
@@ -233,7 +233,7 @@
     .presentation{
         padding-left: 2rem;
     }
-    /*adaptation des marges pour placer les éléments au mieux */ 
+    /*adaptation des marges pour placer les éléments au mieux */
     /*on descend le contenu pour laisser la place au menu*/
     .pres-1{
         padding-top: 8rem;
@@ -245,7 +245,7 @@
     .p-pres{
         margin-bottom: 6rem;
     }
-    /*adaptation des tailles des elements blogger et info qui n'ont plus assez de place au debut 
+    /*adaptation des tailles des elements blogger et info qui n'ont plus assez de place au debut
     du breakpoint. à réadapter qd l'espace le permet*/
     .info {
         font-size: .7rem;
@@ -268,7 +268,7 @@
 }
 /*adaptation des tailles des elements blogger et info qui sont devenus trop petits*/
 
-@media only screen and (min-width: map-get($breakpoints , lg)){ 
+@media only screen and (min-width: map-get($breakpoints , lg)){
     .pres-1{
         .hello{
             margin-top: 6rem;
@@ -301,7 +301,7 @@
         border-radius: .8rem;
         transform: perspective(200px) translateZ(0px);
         transition: all  .4s ease-in;
-        
+
         img{
             left: calc(50% - 1.5rem);/*50% - la moitie de la largeur et de la hauteur de l'élément*/
             top: calc(50% - 1.5rem);
