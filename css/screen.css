@@ -679,9 +679,13 @@ footer a {
   /* line 387, ../sass/layout/_layout.scss */
   .social-footer {
     margin: 1rem 0 0 1rem;
-    font-size: .9rem; } }
+    font-size: .9rem; }
+
+  /* line 391, ../sass/layout/_layout.scss */
+  .sec-banner {
+    margin-top: 5rem; } }
 @media only screen and (min-width: 960px) {
-  /* line 393, ../sass/layout/_layout.scss */
+  /* line 396, ../sass/layout/_layout.scss */
   .social-footer {
     margin: 1rem 0 0 1rem;
     font-size: 1.2rem; } }
@@ -1135,23 +1139,19 @@ footer a {
   padding-left: 1rem; }
 
 @media only screen and (min-width: 720px) {
-  /* line 103, ../sass/pages/_about.scss */
-  .sec-banner {
-    margin-top: 4rem; }
-
-  /* line 107, ../sass/pages/_about.scss */
+  /* line 105, ../sass/pages/_about.scss */
   .testimonial-2 {
     display: flex; }
-  /* line 110, ../sass/pages/_about.scss */
+  /* line 108, ../sass/pages/_about.scss */
   .testimonial-2 img {
     border-radius: 100%; }
 
-  /* line 114, ../sass/pages/_about.scss */
+  /* line 112, ../sass/pages/_about.scss */
   .testimonial-1, .testimonial-2 {
     width: calc(50% - 2rem);
     margin: 0 auto; } }
 @media only screen and (min-width: 960px) {
-  /* line 122, ../sass/pages/_about.scss */
+  /* line 120, ../sass/pages/_about.scss */
   .testimonial-1 img, .testimonial-2 img {
     max-width: 70%; } }
 /*BANIERE*/
@@ -1557,7 +1557,7 @@ aside .blogger p {
 @media only screen and (min-width: 720px) {
   /* line 385, ../sass/pages/_blog.scss */
   .sec-ban-blog {
-    margin-top: 4rem;
+    margin-top: 5rem;
     background-size: cover; }
 
   /* line 391, ../sass/pages/_blog.scss */

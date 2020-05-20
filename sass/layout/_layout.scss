@@ -388,6 +388,9 @@ footer{
         margin: 1rem 0 0 1rem;
         font-size: .9rem;
     }
+    .sec-banner{
+        margin-top: 5rem;
+    }
 }
 @media only screen and (min-width: map-get($breakpoints , lg)){
     .social-footer{
